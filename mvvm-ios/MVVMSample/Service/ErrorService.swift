@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SteamclUtilityBelt
 
 struct ErrorServiceKey: InjectionKey {
     static var currentValue = ErrorService()

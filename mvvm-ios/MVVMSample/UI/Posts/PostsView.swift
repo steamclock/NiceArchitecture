@@ -1,11 +1,11 @@
 //
-//  ContentView.swift
+//  PostsView.swift
 //  MVVMSample
 //
 //  Created by Nigel Brooke on 2021-04-29.
 //
 
-import NiceComponents
+import SteamclUtilityBelt
 import SwiftUI
 
 struct PostsView: View {

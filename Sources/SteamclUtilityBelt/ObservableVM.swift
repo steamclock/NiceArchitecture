@@ -11,7 +11,7 @@ import NiceComponents
 import SwiftUI
 
 open class ObservableVM: ObservableObject {
-    @Injected(\.errorService) private var errorService: ErrorService
+    @Injected(\.errorService) public var errorService: ErrorService
 
     public var cancellables: [AnyCancellable] = []
 

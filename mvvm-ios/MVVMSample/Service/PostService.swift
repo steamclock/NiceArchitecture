@@ -7,6 +7,7 @@
 
 import Foundation
 import Netable
+import SteamclUtilityBelt
 
 struct PostServiceKey: InjectionKey {
     static var currentValue: PostServiceProtocol = PostService()

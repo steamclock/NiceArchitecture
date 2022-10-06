@@ -7,8 +7,9 @@
 
 import Foundation
 import Combine
+import SteamclUtilityBelt
 
-class PostDetailViewModel: ObservableViewModel {
+class PostDetailViewModel: ObservableVM {
     @Injected(\.postRepository) private var postRepo: PostRepositoryProtocol
 
     private unowned let coordinator: PostsCoordinator

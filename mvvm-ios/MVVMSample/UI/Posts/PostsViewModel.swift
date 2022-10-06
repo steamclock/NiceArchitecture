@@ -7,10 +7,11 @@
 
 import Foundation
 import Combine
+import SteamclUtilityBelt
 
 // The view model pulls data from the repository and performs whatever transformation is needed to get it prepared for use by the view
 // Needs to be an Observable object to interact with SwiftUI
-class PostsViewModel: ObservableViewModel {
+class PostsViewModel: ObservableVM {
     @Injected(\.postRepository) private var postRepo: PostRepositoryProtocol
     @Injected(\.userRepository) private var userRepo: UserRepositoryProtocol
 

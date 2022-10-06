@@ -5,7 +5,7 @@
 //  Created by Brendan on 2022-09-09.
 //
 
-import NiceComponents
+import SteamclUtilityBelt
 import SwiftUI
 
 struct PostDetailView: View {

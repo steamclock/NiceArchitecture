@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Netable
+import SteamclUtilityBelt
 import Combine
 
 struct UserRepositoryKey: InjectionKey {

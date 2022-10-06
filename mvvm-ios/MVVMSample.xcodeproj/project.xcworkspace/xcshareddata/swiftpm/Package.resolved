@@ -12,10 +12,10 @@
     {
       "identity" : "netable",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/netable",
+      "location" : "https://github.com/steamclock/netable.git",
       "state" : {
-        "revision" : "bb75b33c0a1b88f07b2a6e10e611b7b5dce78dbb",
-        "version" : "0.10.3"
+        "branch" : "master",
+        "revision" : "82e115862bbb97ca1229b68ea543f994b602ade2"
       }
     },
     {
@@ -39,7 +39,7 @@
     {
       "identity" : "steamclog-swift",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:steamclock/steamclog-swift.git",
+      "location" : "https://github.com/steamclock/steamclog-swift.git",
       "state" : {
         "branch" : "master",
         "revision" : "985c4bb52112f261eb78206a5d542b7d1fc9b5ee"

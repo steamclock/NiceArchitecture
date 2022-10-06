@@ -26,5 +26,9 @@ public struct UnknownError: LoggableError, DisplayableError {
     public func log() {
         clog.warn("\(typeDescription): \(errorDescription)")
     }
+
+    public init(message: String) {
+        self.message = message
+    }
 }
 

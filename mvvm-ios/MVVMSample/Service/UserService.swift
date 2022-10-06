@@ -7,6 +7,7 @@
 
 import Foundation
 import Netable
+import SteamclUtilityBelt
 
 struct UserServiceKey: InjectionKey {
     static var currentValue: UserServiceProtocol = UserService()

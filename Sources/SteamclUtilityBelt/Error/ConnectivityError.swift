@@ -27,5 +27,7 @@ public struct ConnectivityError: LoggableError, DisplayableError {
     public func log() {
         clog.warn("Connectivity Error", self)
     }
+
+    public init() {}
 }
 
