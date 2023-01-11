@@ -9,9 +9,13 @@ import Foundation
 @testable import MVVMSample
 
 class MockPostService: PostServiceProtocol {
-    @TestData("Posts") var posts: [Post]
+    var posts: [Post]
 
-    func getPost(id: String) async throws -> Post {
+    init() {
+        posts = Post.mockedArrayOf(10)
+    }
+
+    func getPost(id: Int) async throws -> Post {
         posts.first!
     }
 

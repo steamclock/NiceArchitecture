@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SteamclUtilityBelt
 @testable import MVVMSample
 
 class MockPostRepository: PostRepositoryProtocol {
@@ -19,9 +20,10 @@ class MockPostRepository: PostRepositoryProtocol {
         self.posts = posts
     }
 
-    func getPost(id: String, cacheMode: CacheMode) async throws -> Post {
-        posts.first!
+    func getPost(id: Int, cacheMode: CacheMode) async throws -> Post {
+        posts.first { $0.id == id }!
     }
+
 
     func getPostList(cacheMode: CacheMode) async throws -> [Post] {
         posts

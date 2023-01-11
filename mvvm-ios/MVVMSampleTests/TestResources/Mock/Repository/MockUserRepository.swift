@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SteamclUtilityBelt
 @testable import MVVMSample
 
 class MockUserRepository: UserRepositoryProtocol {

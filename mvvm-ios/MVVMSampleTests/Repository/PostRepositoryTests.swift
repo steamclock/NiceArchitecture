@@ -6,56 +6,43 @@
 //
 
 import Combine
+import Nimble
+import Quick
+import SteamclUtilityBelt
 @testable import MVVMSample
-import XCTest
 
-class PostRepositoryTests: XCTestCase {
+class PostsRepositorySpec: QuickSpec {
     var postRepository: PostRepository!
     var cancellables = Set<AnyCancellable>()
 
-    override func setUp() {
-        super.setUp()
-
-        InjectedValues[\.postService] = MockPostService()
-        postRepository = PostRepository()
-    }
-
-
-    func testShouldPassthroughGetPost() {
-        let expectation = XCTestExpectation(description: "Post should be passed through")
-
-        postRepository.post
-            .sink { post in
-                expectation.fulfill()
-            }.store(in: &cancellables)
-
-        Task {
-            let post = try? await postRepository.getPost(id: "1", cacheMode: .cacheAndUpdate)
-
-            XCTAssertNotNil(post)
+    override func spec() {
+        beforeEach {
+            InjectedValues[\.postService] = MockPostService()
+            self.postRepository = PostRepository(cache: CacheService())
         }
 
-        wait(for: [expectation], timeout: 1.0)
+        describe("get posts") {
+            it("should passthrough and return single posts") {
+                self.postRepository.post
+                    .sink { post in
+                        expect(post) != nil
+                    }.store(in: &self.cancellables)
 
-        XCTAssert(true)
-    }
+                let post = try? await self.postRepository.getPost(id: 1, cacheMode: .cacheAndUpdate)
 
-    func testShouldPassthroughGetPostList() {
-        let expectation = XCTestExpectation(description: "Posts should be passed through")
+                expect(post) != nil
+            }
 
-        postRepository.postList
-            .sink { post in
-                expectation.fulfill()
-            }.store(in: &cancellables)
+            it("should passthrough the post list") {
+                self.postRepository.postList
+                    .sink { posts in
+                        expect(posts.count) != 0
+                    }.store(in: &self.cancellables)
 
-        Task {
-            let post = try? await postRepository.getPostList(cacheMode: .cacheAndUpdate)
+                let posts = try? await self.postRepository.getPostList(cacheMode: .cacheAndUpdate)
 
-            XCTAssertNotNil(post)
+                expect(posts) != nil
+            }
         }
-
-        wait(for: [expectation], timeout: 1.0)
-
-        XCTAssert(true)
     }
 }
