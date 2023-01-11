@@ -5,6 +5,8 @@
 //  Created by Nigel Brooke on 2021-04-29.
 //
 
+import Nimble
+import Quick
 import XCTest
 @testable import MVVMSample
 

@@ -42,6 +42,11 @@
 		C6AA2F0028CB9AAC00731528 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = C6AA2EFF28CB9AAC00731528 /* Users.json */; };
 		C6AA2F0228CBAD1B00731528 /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0128CBAD1B00731528 /* PostRepositoryTests.swift */; };
 		C6AA2F0528CBAE9500731528 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0428CBAE9500731528 /* MockPostService.swift */; };
+		C6B5EF15296E17E100DC956F /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = C6B5EF14296E17E100DC956F /* Quick */; };
+		C6B5EF18296E18B400DC956F /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = C6B5EF17296E18B400DC956F /* Nimble */; };
+		C6B5EF1B296E262800DC956F /* FactoryBird in Frameworks */ = {isa = PBXBuildFile; productRef = C6B5EF1A296E262800DC956F /* FactoryBird */; };
+		C6B5EF1D296E264400DC956F /* Post+Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5EF1C296E264400DC956F /* Post+Mockable.swift */; };
+		C6B5EF1F296E272B00DC956F /* User+Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5EF1E296E272B00DC956F /* User+Mockable.swift */; };
 		C6C97FCA28EF3EEF0089586C /* SteamclUtilityBelt in Frameworks */ = {isa = PBXBuildFile; productRef = C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */; };
 		C6C97FCC28EF43A60089586C /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C97FCB28EF43A60089586C /* InjectedValues.swift */; };
 		C6DBE1A428CBEDEC0072C63D /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBE1A328CBEDEC0072C63D /* PostDetailView.swift */; };
@@ -107,6 +112,8 @@
 		C6AA2EFF28CB9AAC00731528 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		C6AA2F0128CBAD1B00731528 /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
 		C6AA2F0428CBAE9500731528 /* MockPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
+		C6B5EF1C296E264400DC956F /* Post+Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Mockable.swift"; sourceTree = "<group>"; };
+		C6B5EF1E296E272B00DC956F /* User+Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Mockable.swift"; sourceTree = "<group>"; };
 		C6C97FC728EF3EDA0089586C /* steamclutility-belt */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "steamclutility-belt"; path = ..; sourceTree = "<group>"; };
 		C6C97FCB28EF43A60089586C /* InjectedValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		C6DBE1A328CBEDEC0072C63D /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
@@ -126,6 +133,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B5EF15296E17E100DC956F /* Quick in Frameworks */,
+				C6B5EF1B296E262800DC956F /* FactoryBird in Frameworks */,
+				C6B5EF18296E18B400DC956F /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +345,8 @@
 				C61DC74828D398950089E912 /* TestData.swift */,
 				C6AA2EF828CB98E900731528 /* JSON */,
 				C6AA2EF228CB980100731528 /* Mock */,
+				C6B5EF1C296E264400DC956F /* Post+Mockable.swift */,
+				C6B5EF1E296E272B00DC956F /* User+Mockable.swift */,
 			);
 			path = TestResources;
 			sourceTree = "<group>";
@@ -443,6 +455,11 @@
 				A62B2260263BABA500A0136E /* PBXTargetDependency */,
 			);
 			name = MVVMSampleTests;
+			packageProductDependencies = (
+				C6B5EF14296E17E100DC956F /* Quick */,
+				C6B5EF17296E18B400DC956F /* Nimble */,
+				C6B5EF1A296E262800DC956F /* FactoryBird */,
+			);
 			productName = MVVMSampleTests;
 			productReference = A62B225E263BABA500A0136E /* MVVMSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -497,6 +514,9 @@
 			);
 			mainGroup = A62B2244263BABA400A0136E;
 			packageReferences = (
+				C6B5EF13296E17E100DC956F /* XCRemoteSwiftPackageReference "Quick" */,
+				C6B5EF16296E18B400DC956F /* XCRemoteSwiftPackageReference "Nimble" */,
+				C6B5EF19296E262800DC956F /* XCRemoteSwiftPackageReference "factory-bird" */,
 			);
 			productRefGroup = A62B224E263BABA400A0136E /* Products */;
 			projectDirPath = "";
@@ -579,9 +599,11 @@
 				C6AA2EF528CB981600731528 /* MockPostRepository.swift in Sources */,
 				C6AA2F0228CBAD1B00731528 /* PostRepositoryTests.swift in Sources */,
 				C6AA2F0528CBAE9500731528 /* MockPostService.swift in Sources */,
+				C6B5EF1F296E272B00DC956F /* User+Mockable.swift in Sources */,
 				C6AA2EEF28CB960E00731528 /* PostsViewModelTests.swift in Sources */,
 				C61DC74A28D39C090089E912 /* TestData.swift in Sources */,
 				A62B2263263BABA500A0136E /* MVVMSampleTests.swift in Sources */,
+				C6B5EF1D296E264400DC956F /* Post+Mockable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,7 +910,49 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		C6B5EF13296E17E100DC956F /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C6B5EF16296E18B400DC956F /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C6B5EF19296E262800DC956F /* XCRemoteSwiftPackageReference "factory-bird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:steamclock/factory-bird.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		C6B5EF14296E17E100DC956F /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B5EF13296E17E100DC956F /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		C6B5EF17296E18B400DC956F /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B5EF16296E18B400DC956F /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		C6B5EF1A296E262800DC956F /* FactoryBird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B5EF19296E262800DC956F /* XCRemoteSwiftPackageReference "factory-bird" */;
+			productName = FactoryBird;
+		};
 		C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SteamclUtilityBelt;

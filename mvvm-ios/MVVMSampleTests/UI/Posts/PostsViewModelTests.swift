@@ -6,47 +6,49 @@
 //
 
 import Combine
+import Nimble
+import Quick
+import SteamclUtilityBelt
 @testable import MVVMSample
-import XCTest
 
-class PostsViewModelTests: XCTestCase {
+class PostsViewModelSpec: QuickSpec {
     var viewModel: PostsViewModel!
     var cancellables = Set<AnyCancellable>()
 
-    @TestData("Users") private var users: [User]
-    @TestData("Posts") private var posts: [Post]
+    private var users: [User] = User.mockedArrayOf(10)
+    private var posts: [Post] = Post.mockedArrayOf(10)
 
-    override func setUp() {
-        super.setUp()
+    override func spec() {
+        beforeEach {
+            InjectedValues[\.postRepository] = MockPostRepository(posts: self.posts)
+            InjectedValues[\.userRepository] = MockUserRepository(users: self.users)
 
-        InjectedValues[\.postRepository] = MockPostRepository(posts: posts)
-        InjectedValues[\.userRepository] = MockUserRepository(users: users)
+            self.viewModel = PostsViewModel(coordinator: PostsCoordinator())
+        }
 
-        viewModel = .init()
-    }
+        describe("contentLoadState") {
+            it("starts with the correct load state") {
+                expect(self.viewModel.contentLoadState).to(equal(.noData))
+            }
 
-    func testSuccessfulContentLoadStates() {
-        XCTAssertEqual(viewModel.contentLoadState, .noData)
+            it("updates to loading when fetching data") {
+                self.viewModel.bindViewModel()
+                expect(self.viewModel.contentLoadState).to(equal(.loading))
+            }
 
-        let expectation = XCTestExpectation(description: "Posts should populate")
-        viewModel.$posts
-            .dropFirst()
-            .sink { vm in
-                expectation.fulfill()
-            }.store(in: &cancellables)
+            it("updates to hasData after fetching data") {
+                self.viewModel.$posts
+                   .dropFirst()
+                   .sink { vm in
+                       expect(self.viewModel.contentLoadState).to(equal(.hasData))
+                   }.store(in: &self.cancellables)
 
-        viewModel.bindViewModel()
+                self.viewModel.bindViewModel()
+            }
+        }
 
-        XCTAssertEqual(viewModel.contentLoadState, .loading)
-
-        wait(for: [expectation], timeout: 1.0)
-
-        XCTAssertEqual(viewModel.contentLoadState, .hasData)
-    }
-
-    override func tearDown() {
-        super.tearDown()
-
-        viewModel = nil
+        afterEach {
+            self.viewModel = nil
+        }
     }
 }
