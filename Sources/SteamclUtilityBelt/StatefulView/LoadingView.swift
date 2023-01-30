@@ -20,7 +20,11 @@ public struct LoadingView<Footer: View>: View {
 
     public var body: some View {
         VStack(alignment: .center) {
-            ActivityIndicator(isAnimating: true) { $0.style = style }
+            if #available(iOS 14, *) {
+                ProgressView()
+            } else {
+                ActivityIndicator(isAnimating: true) { $0.style = style }
+            }
 
             footer()
         }
@@ -28,8 +32,8 @@ public struct LoadingView<Footer: View>: View {
 }
 
 public extension LoadingView where Footer == EmptyView {
-    init(_ style: UIActivityIndicatorView.Style = .large) {
-        self.init(style, footer: { EmptyView() })
+    init() {
+        self.init(footer: { EmptyView() })
     }
 }
 
