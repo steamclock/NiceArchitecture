@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "44e891bdb61426a95e31492a67c7c0dfad1f87c5",
+        "version" : "7.4.1"
+      }
+    },
+    {
+      "identity" : "netable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steamclock/netable.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "96623a3dce12c463ecc249442a0b4ecb6c87e16d"
+      }
+    },
+    {
+      "identity" : "nice_components",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steamclock/nice_components.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d7ca2437e7f41a761b10f9736fc6a81ff256db1c"
+      }
+    },
+    {
+      "identity" : "sentry-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/getsentry/sentry-cocoa",
+      "state" : {
+        "revision" : "c3c19e29f775ee95b77aa3168f3e2fd6c20deba6",
+        "version" : "7.31.3"
+      }
+    },
+    {
+      "identity" : "steamclog-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steamclock/steamclog-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "985c4bb52112f261eb78206a5d542b7d1fc9b5ee"
+      }
+    },
+    {
+      "identity" : "xcglogger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DaveWoodCom/XCGLogger",
+      "state" : {
+        "revision" : "a9c4667b247928a29bdd41be2ec2c8d304215a54",
+        "version" : "7.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

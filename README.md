@@ -16,7 +16,7 @@ This package, and attached example project, contains a bunch of tools and tricks
 
 ## The Example Project
 
-In addition to giving examples of how to use all the utilities included in this package, the example project lays out our current preferred app architecture.
+In addition to giving examples of how to use all the utilities included in this package, the example project lays out our current preferred app architecture as of Jan 2023.
 
 This includes sample Services, Repositories, View Models, Views, and some guidance for testing the whole mess.
 

@@ -7,20 +7,23 @@
 
 import NiceComponents
 import SwiftUI
+import UIKit
 
 public struct LoadingView<Footer: View>: View {
+    let style: UIActivityIndicatorView.Style
     let footer: () -> Footer
 
-    public init(footer: @escaping () -> Footer) {
+    public init(_ style: UIActivityIndicatorView.Style = .large, footer: @escaping () -> Footer) {
+        self.style = style
         self.footer = footer
     }
 
     public var body: some View {
         VStack(alignment: .center) {
-            if #available(macOS 11.0, *) {
+            if #available(iOS 14, *) {
                 ProgressView()
             } else {
-                Text("fix me!")
+                ActivityIndicator(isAnimating: true) { $0.style = style }
             }
 
             footer()
