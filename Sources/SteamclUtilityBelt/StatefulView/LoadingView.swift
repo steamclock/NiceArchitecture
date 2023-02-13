@@ -10,23 +10,15 @@ import SwiftUI
 import UIKit
 
 public struct LoadingView<Footer: View>: View {
-    let style: UIActivityIndicatorView.Style
     let footer: () -> Footer
 
-    public init(_ style: UIActivityIndicatorView.Style = .large, footer: @escaping () -> Footer) {
-        self.style = style
+    public init(footer: @escaping () -> Footer) {
         self.footer = footer
     }
 
     public var body: some View {
         VStack(alignment: .center) {
-            if #available(iOS 14, *) {
-                ProgressView()
-            } else {
-                ActivityIndicator(isAnimating: true) { $0.style = style }
-            }
-
-            footer()
+            ProgressView()
         }
     }
 }
