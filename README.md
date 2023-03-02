@@ -5,14 +5,14 @@
 This package, and attached example project, contains a bunch of tools and tricks we've found useful when developing apps with Swift, and more specifically SwiftUI.
 
 #### Index
-[The Example Project](#the-example-project)
-[ContentLoadState](#contentloadstate)
-[ObservableVM](#observablevm)
-[Stateful View](#stateful-view)
-[Dependency Injection](#dependency-injection)
-[Error Handling](#error-handling)
-[Cacheing](#cacheing)
-[Array+Cancellable](#array+cancellable)
+ - [The Example Project](#the-example-project)
+ - [ContentLoadState](#contentloadstate)
+ - [ObservableVM](#observablevm)
+ - [Stateful View](#stateful-view)
+ - [Dependency Injection](#dependency-injection)
+ - [Error Handling](#error-handling)
+ - [Cacheing](#cacheing)
+ - [Array+Cancellable](#array+cancellable)
 
 ## The Example Project
 
