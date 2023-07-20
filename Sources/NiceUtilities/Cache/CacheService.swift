@@ -1,9 +1,9 @@
 //
 //  CacheService.swift
-//  SteamclUtilityBelt
+//  NiceUtilities
 //
 //  Created by Jake Miner on 2021-05-25.
-//
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 
 import Foundation
 

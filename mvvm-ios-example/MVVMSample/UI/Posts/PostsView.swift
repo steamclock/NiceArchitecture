@@ -5,7 +5,7 @@
 //  Created by Nigel Brooke on 2021-04-29.
 //
 
-import SteamclUtilityBelt
+import NiceUtilities
 import SwiftUI
 
 struct PostsView: View {

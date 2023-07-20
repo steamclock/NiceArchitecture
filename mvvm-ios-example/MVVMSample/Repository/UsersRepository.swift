@@ -5,9 +5,9 @@
 //  Created by Jake Miner on 2021-05-25.
 //
 
-import Foundation
-import SteamclUtilityBelt
 import Combine
+import Foundation
+import NiceUtilities
 
 struct UserRepositoryKey: InjectionKey {
     static var currentValue: UserRepositoryProtocol = UserRepository(cache: CacheService())

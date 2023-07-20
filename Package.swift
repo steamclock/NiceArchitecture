@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "SteamclUtilityBelt",
+    name: "NiceUtilities",
     platforms: [
         .iOS("15.0"),
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "SteamclUtilityBelt", targets: ["SteamclUtilityBelt"]),
+        .library(name: "NiceUtilities", targets: ["NiceUtilities"]),
     ],
     dependencies: [
         .package(url: "https://github.com/steamclock/nice_components.git", branch: "main"),
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SteamclUtilityBelt",
+            name: "NiceUtilities",
             dependencies: [
                 .product(name: "Netable", package: "netable"),
                 .product(name: "NiceComponents", package: "nice_components"),

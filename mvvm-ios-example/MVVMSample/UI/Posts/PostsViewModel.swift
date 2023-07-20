@@ -5,9 +5,9 @@
 //  Created by Nigel Brooke on 2021-04-29.
 //
 
-import Foundation
 import Combine
-import SteamclUtilityBelt
+import Foundation
+import NiceUtilities
 
 // The view model pulls data from the repository and performs whatever transformation is needed to get it prepared for use by the view
 // Needs to be an Observable object to interact with SwiftUI
