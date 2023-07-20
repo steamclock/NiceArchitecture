@@ -1,9 +1,9 @@
 //
 //  ErrorService.swift
-//  SteamclUtilityBelt
+//  NiceUtilities
 //
 //  Created by Brendan on 2022-09-13.
-//
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 
 import Combine
 import Foundation

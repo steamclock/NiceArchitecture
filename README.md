@@ -1,6 +1,6 @@
-![](steamclutilitybelt.png)
+![](utilitybelt.png)
 
-# SteamclUtilityBelt
+# NiceUtilities
 
 This package, and attached example project, contains a bunch of tools and tricks we've found useful when developing apps with Swift, and more specifically SwiftUI.
 

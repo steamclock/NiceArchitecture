@@ -5,9 +5,9 @@
 //  Created by Brendan on 2022-09-09.
 //
 
-import Foundation
 import Combine
-import SteamclUtilityBelt
+import Foundation
+import NiceUtilities
 
 class PostDetailViewModel: ObservableVM {
     @Injected(\.postRepository) private var postRepo: PostRepositoryProtocol

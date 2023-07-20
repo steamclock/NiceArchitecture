@@ -7,7 +7,7 @@
 
 import Combine
 import Foundation
-import SteamclUtilityBelt
+import NiceUtilities
 
 // Should this and the repo protocol live in a separate file?
 struct PostRepositoryKey: InjectionKey {

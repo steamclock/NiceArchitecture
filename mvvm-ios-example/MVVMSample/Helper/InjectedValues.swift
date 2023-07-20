@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SteamclUtilityBelt
+import NiceUtilities
 
 extension InjectedValues {
     // REPOSITORIES
