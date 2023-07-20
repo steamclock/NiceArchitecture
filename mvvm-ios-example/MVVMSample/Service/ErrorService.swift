@@ -16,11 +16,11 @@ struct ErrorServiceKey: InjectionKey {
 class ErrorService {
     private var cancellables = [AnyCancellable]()
 
-    var error = PassthroughSubject<Error, Never>()
-    var didReceiveDisplayableError = PassthroughSubject<DisplayableError, Never>()
+    private let incomingError = PassthroughSubject<Error, Never>()
+    let didReceiveDisplayableError = PassthroughSubject<DisplayableError, Never>()
 
     init() {
-        error
+        incomingError
             .receive(on: RunLoop.main)
             .sink { [weak self] error in
                 guard let self = self else { return }
@@ -31,28 +31,36 @@ class ErrorService {
                 }
 
                 if let loggableError = error as? LoggableError {
-                    if loggableError.isConnectionError {
-                        self.didReceiveDisplayableError.send(ConnectivityError())
-                        return
-                    }
                     loggableError.log()
+                } else {
+                    self.logUnhandled(error: error)
                 }
 
-                if let displayError = error as? DisplayableError {
-                    self.didReceiveDisplayableError.send(displayError)
+                guard let displayError = error as? DisplayableError else {
+                    self.didReceiveDisplayableError.send(UnknownError(message: error.localizedDescription))
+                    clog.info("Showing unknown error: \(error)")
                     return
                 }
 
-                switch error {
-                case let decodingError as DecodingError:
-                    clog.error("Decoding error", info: decodingError.errorDescription)
-                default:
-                    clog.info("An unknown or unhandled error occurred: \(error.localizedDescription)")
-                }
-
-                let displayableError = UnknownError(message: "Please try again later.")
-                self.didReceiveDisplayableError.send(displayableError)
-                clog.info("Showing displayable error: \(displayableError)")
+                self.didReceiveDisplayableError.send(displayError)
             }.store(in: &cancellables)
+    }
+
+    func capture(_ error: Error) {
+        if let loggableError = error as? LoggableError, loggableError.isConnectionError {
+            incomingError.send(ConnectivityError())
+            return
+        }
+
+        incomingError.send(error)
+    }
+
+    private func logUnhandled(error: Error) {
+        switch error {
+        case let decodingError as DecodingError:
+            clog.error("Decoding error", info: decodingError.errorDescription)
+        default:
+            clog.info("An unknown or unhandled error occurred: \(error.localizedDescription)")
+        }
     }
 }

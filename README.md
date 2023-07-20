@@ -18,26 +18,28 @@ This package, and attached example project, contains a bunch of tools and tricks
 
 In addition to giving examples of how to use all the utilities included in this package, the example project lays out our current preferred app architecture as of Jan 2023.
 
-This includes sample Services, Repositories, View Models, Views, and some guidance for testing the whole mess.
+This includes sample Services, Repositories, View Models, Views, Coordinators, and some guidance for testing the whole mess.
 
 ## ContentLoadState
 
-When creating views, we frequently want to change the state of the view based on the state of the content that view is displaying.
+When managing Views, one of the most important aspects is making sure that our View's state matches what the ViewModel is doing. If the user is waiting for something to return from a Service, the View the should reflect this loading state. ContentLoadState captures the 4 most basic states we typically want to express to users:
 
 - Loading: The content is currently loading
-- NoData: The content has loaded successfully, but is empty.
+- NoData: The content has loaded successfully, but is empty
 - HasData: The content has loaded successfully
-- Error: Something's gone wrong
+- Error: Something's gone wrong, typically the error is attached with more details
 
 ## ObservableVM
 
-An observable VM provides a skeleton for a view model that manages a view's content, in addition to communicating with repositories and services.
+ObservableVM provides a good starting place for ViewModels to inherit from, and includes a bunch of utilities we usually want when setting up a ViewModel, including:
+- Tracking `ContentLoadState`, along with `bind`/`unbind` calls to manage Views entering/leaving the foreground
+- Capturing and displaying errors through the `ErrorService`
 
-See our complete [MVVM example project](https://github.com/steamclock/mvvm-ios/) for the full picture.
+See our complete [MVVM example project](https://github.com/steamclock/NiceUtilities/blob/main/mvvm-ios-example/MVVMSample/UI/Posts/PostsViewModel.swift) for an example of how this is implemented.
 
 ## Stateful View
 
-StatefulView should be using in combination with `ObservableViewModel`'s `ContentLoadState` to provide a nice starting point for building views that react to their content state.
+StatefulView should be using in combination with `ObservableViewModel`'s `ContentLoadState` to provide a nice starting point for building Views that update their content to reflect the `ContentLoadState`.
 
 ```
 struct AStatefulView: View {
@@ -59,7 +61,7 @@ struct AStatefulView: View {
     }
 ```
 
-See [TODO: ADD FULL EXAMPLE LINK] for a complete example
+See [our example project](https://github.com/steamclock/NiceUtilities/blob/main/mvvm-ios-example/MVVMSample/UI/Posts/PostsView.swift) for a demo of how you might use this.
 
 ## Dependency Injection
 
@@ -96,9 +98,11 @@ class AViewModel: ObservableViewModel {
     @Injected(\.userService) private var userService: UserServiceProtocol
 ```
 
+Our [example project](https://github.com/steamclock/NiceUtilities/blob/main/mvvm-ios-example/MVVMSample/UI/Posts/PostsViewModel.swift) contains a complete example of how you might use this.
+
 ## Error Handling
 
-Included in this library in a ready-to-be-injected class called `ErrorService`, designed to receive incoming errors through the `error` Subject.
+Included in this library is a ready-to-be-injected class called `ErrorService`, designed to receive incoming errors through the `error` Subject.
 
 View models can listen to `didReceiveDisplayableError` and handle the results as needed.
 
