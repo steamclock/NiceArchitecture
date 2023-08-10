@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "017f94ccfdacabb1ae7f45b75b4217b24c06e6ac",
-        "version" : "7.4.0"
+        "revision" : "c75584ac759cbb16b204d0a7de3ebf53ea6b304d",
+        "version" : "7.9.0"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/steamclock/netable.git",
       "state" : {
         "branch" : "master",
-        "revision" : "82e115862bbb97ca1229b68ea543f994b602ade2"
+        "revision" : "96623a3dce12c463ecc249442a0b4ecb6c87e16d"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/steamclock/nice_components.git",
       "state" : {
         "branch" : "main",
-        "revision" : "258a2956a60576cd302c01c58c954a8aefa00788"
+        "revision" : "254031ddbebf5d82452693071b35535a6e12514e"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getsentry/sentry-cocoa",
       "state" : {
-        "revision" : "3441e8f9be290edcc7be57c93a1c128c1a787c2a",
-        "version" : "7.27.1"
+        "revision" : "04bee4ad86d74d4cb4d7101ff826d6e355301ba9",
+        "version" : "8.9.4"
       }
     },
     {
@@ -42,7 +42,7 @@
       "location" : "https://github.com/steamclock/steamclog-swift.git",
       "state" : {
         "branch" : "master",
-        "revision" : "985c4bb52112f261eb78206a5d542b7d1fc9b5ee"
+        "revision" : "fb60ecce1543c8ed971b91eda25b7c5a1b1908aa"
       }
     },
     {

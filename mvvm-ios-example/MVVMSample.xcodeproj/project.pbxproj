@@ -19,6 +19,7 @@
 		A62B2281263BAD5300A0136E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2280263BAD5300A0136E /* Post.swift */; };
 		A62B2289263BB3D700A0136E /* PostViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2288263BB3D700A0136E /* PostViewState.swift */; };
 		A62B228B263BC21200A0136E /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B228A263BC21200A0136E /* PostsViewModel.swift */; };
+		B38AD8032A85476200AAE0D2 /* NiceUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = B38AD8022A85476200AAE0D2 /* NiceUtilities */; };
 		C61DC74A28D39C090089E912 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61DC74828D398950089E912 /* TestData.swift */; };
 		C640400428CBE7AD004F3DF6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C640400328CBE7AD004F3DF6 /* PostCell.swift */; };
 		C640400728CBEAA0004F3DF6 /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C640400628CBEAA0004F3DF6 /* PostsCoordinator.swift */; };
@@ -42,7 +43,6 @@
 		C6AA2F0028CB9AAC00731528 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = C6AA2EFF28CB9AAC00731528 /* Users.json */; };
 		C6AA2F0228CBAD1B00731528 /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0128CBAD1B00731528 /* PostRepositoryTests.swift */; };
 		C6AA2F0528CBAE9500731528 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0428CBAE9500731528 /* MockPostService.swift */; };
-		C6C97FCA28EF3EEF0089586C /* SteamclUtilityBelt in Frameworks */ = {isa = PBXBuildFile; productRef = C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */; };
 		C6C97FCC28EF43A60089586C /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C97FCB28EF43A60089586C /* InjectedValues.swift */; };
 		C6DBE1A428CBEDEC0072C63D /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBE1A328CBEDEC0072C63D /* PostDetailView.swift */; };
 		C6DBE1A628CBEE090072C63D /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBE1A528CBEE090072C63D /* PostDetailViewModel.swift */; };
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C97FCA28EF3EEF0089586C /* SteamclUtilityBelt in Frameworks */,
+				B38AD8032A85476200AAE0D2 /* NiceUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +423,7 @@
 			);
 			name = MVVMSample;
 			packageProductDependencies = (
-				C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */,
+				B38AD8022A85476200AAE0D2 /* NiceUtilities */,
 			);
 			productName = MVVMSample;
 			productReference = A62B224D263BABA400A0136E /* MVVMSample.app */;
@@ -889,9 +889,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */ = {
+		B38AD8022A85476200AAE0D2 /* NiceUtilities */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = SteamclUtilityBelt;
+			productName = NiceUtilities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
