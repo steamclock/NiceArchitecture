@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3F746E42A8568B90036E7B2 /* MVVMSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746DC2A8568B90036E7B2 /* MVVMSampleApp.swift */; };
+		B38822182AB4C94600AFFA28 /* NiceArchitectureExampleTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */; };
+		B3DC7BB82A8AE55000601348 /* EmptyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */; };
+		B3F746E42A8568B90036E7B2 /* NiceArchitectureExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */; };
 		B3F747272A8583E40036E7B2 /* PostsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */; };
 		B3F747282A8583E40036E7B2 /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747052A8583E40036E7B2 /* PostsCoordinator.swift */; };
 		B3F747292A8583E40036E7B2 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747072A8583E40036E7B2 /* PostsViewModel.swift */; };
@@ -25,12 +27,9 @@
 		B3F747352A8583E40036E7B2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747182A8583E40036E7B2 /* Coordinator.swift */; };
 		B3F747362A8583E40036E7B2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7471A2A8583E40036E7B2 /* UserService.swift */; };
 		B3F747372A8583E40036E7B2 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7471B2A8583E40036E7B2 /* PostService.swift */; };
-		B3F747382A8583E40036E7B2 /* PostRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7471E2A8583E40036E7B2 /* PostRequestProtocol.swift */; };
 		B3F747392A8583E40036E7B2 /* GetPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7471F2A8583E40036E7B2 /* GetPostsRequest.swift */; };
-		B3F7473A2A8583E40036E7B2 /* DeletePostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747202A8583E40036E7B2 /* DeletePostRequest.swift */; };
 		B3F7473B2A8583E40036E7B2 /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747212A8583E40036E7B2 /* GetPostRequest.swift */; };
 		B3F7473C2A8583E40036E7B2 /* GetUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747232A8583E40036E7B2 /* GetUsersRequest.swift */; };
-		B3F7473D2A8583E40036E7B2 /* UserRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747242A8583E40036E7B2 /* UserRequestProtocol.swift */; };
 		B3F7473E2A8583E40036E7B2 /* GetUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747252A8583E40036E7B2 /* GetUserRequest.swift */; };
 		B3F7473F2A8583E40036E7B2 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747262A8583E40036E7B2 /* ErrorService.swift */; };
 		B3F747582A85874D0036E7B2 /* MVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746EE2A8569620036E7B2 /* MVVMSampleTests.swift */; };
@@ -60,9 +59,10 @@
 		A62B224D263BABA400A0136E /* NiceArchitectureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceArchitectureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceArchitectureExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30BF1452A8564AE009CD570 /* niceArchitecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = niceArchitecture; path = ..; sourceTree = "<group>"; };
+		B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPostCell.swift; sourceTree = "<group>"; };
 		B3F746C32A85680C0036E7B2 /* NiceArchitectureExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiceArchitectureExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3F746D82A8568680036E7B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F746DC2A8568B90036E7B2 /* MVVMSampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMSampleApp.swift; sourceTree = "<group>"; };
+		B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceArchitectureExampleApp.swift; sourceTree = "<group>"; };
 		B3F746EE2A8569620036E7B2 /* MVVMSampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMSampleTests.swift; sourceTree = "<group>"; };
 		B3F746F02A8569620036E7B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsCoordinatorView.swift; sourceTree = "<group>"; };
@@ -82,12 +82,9 @@
 		B3F747182A8583E40036E7B2 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B3F7471A2A8583E40036E7B2 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B3F7471B2A8583E40036E7B2 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
-		B3F7471E2A8583E40036E7B2 /* PostRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequestProtocol.swift; sourceTree = "<group>"; };
 		B3F7471F2A8583E40036E7B2 /* GetPostsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostsRequest.swift; sourceTree = "<group>"; };
-		B3F747202A8583E40036E7B2 /* DeletePostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePostRequest.swift; sourceTree = "<group>"; };
 		B3F747212A8583E40036E7B2 /* GetPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostRequest.swift; sourceTree = "<group>"; };
 		B3F747232A8583E40036E7B2 /* GetUsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsersRequest.swift; sourceTree = "<group>"; };
-		B3F747242A8583E40036E7B2 /* UserRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestProtocol.swift; sourceTree = "<group>"; };
 		B3F747252A8583E40036E7B2 /* GetUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRequest.swift; sourceTree = "<group>"; };
 		B3F747262A8583E40036E7B2 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		B3F747412A8584C00036E7B2 /* PostRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
@@ -153,7 +150,7 @@
 				B3F747192A8583E40036E7B2 /* Service */,
 				B3F747022A8583E40036E7B2 /* UI */,
 				B3F747012A8583C60036E7B2 /* Helper */,
-				B3F746DC2A8568B90036E7B2 /* MVVMSampleApp.swift */,
+				B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */,
 				B3F746D82A8568680036E7B2 /* Info.plist */,
 			);
 			path = NiceArchitectureExample;
@@ -212,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				B3F747092A8583E40036E7B2 /* PostCell.swift */,
+				B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -276,9 +274,7 @@
 		B3F7471D2A8583E40036E7B2 /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				B3F7471E2A8583E40036E7B2 /* PostRequestProtocol.swift */,
 				B3F7471F2A8583E40036E7B2 /* GetPostsRequest.swift */,
-				B3F747202A8583E40036E7B2 /* DeletePostRequest.swift */,
 				B3F747212A8583E40036E7B2 /* GetPostRequest.swift */,
 			);
 			path = Post;
@@ -288,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				B3F747232A8583E40036E7B2 /* GetUsersRequest.swift */,
-				B3F747242A8583E40036E7B2 /* UserRequestProtocol.swift */,
 				B3F747252A8583E40036E7B2 /* GetUserRequest.swift */,
 			);
 			path = User;
@@ -477,6 +472,7 @@
 			files = (
 				B3F7475E2A85875F0036E7B2 /* Users.json in Resources */,
 				B3F7475F2A85875F0036E7B2 /* Posts.json in Resources */,
+				B38822182AB4C94600AFFA28 /* NiceArchitectureExampleTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +485,7 @@
 			files = (
 				B3F747332A8583E40036E7B2 /* User.swift in Sources */,
 				B3F7472D2A8583E40036E7B2 /* PostDetailView.swift in Sources */,
-				B3F7473D2A8583E40036E7B2 /* UserRequestProtocol.swift in Sources */,
+				B3DC7BB82A8AE55000601348 /* EmptyPostCell.swift in Sources */,
 				B3F747352A8583E40036E7B2 /* Coordinator.swift in Sources */,
 				B3F7472F2A8583E40036E7B2 /* PostRepository.swift in Sources */,
 				B3F7472B2A8583E40036E7B2 /* PostsView.swift in Sources */,
@@ -498,17 +494,15 @@
 				B3F7472C2A8583E40036E7B2 /* PostDetailViewModel.swift in Sources */,
 				B3F747342A8583E40036E7B2 /* Post.swift in Sources */,
 				B3F747272A8583E40036E7B2 /* PostsCoordinatorView.swift in Sources */,
-				B3F7473A2A8583E40036E7B2 /* DeletePostRequest.swift in Sources */,
 				B3F747372A8583E40036E7B2 /* PostService.swift in Sources */,
 				B3F747292A8583E40036E7B2 /* PostsViewModel.swift in Sources */,
-				B3F746E42A8568B90036E7B2 /* MVVMSampleApp.swift in Sources */,
+				B3F746E42A8568B90036E7B2 /* NiceArchitectureExampleApp.swift in Sources */,
 				B3F747282A8583E40036E7B2 /* PostsCoordinator.swift in Sources */,
 				B3F747322A8583E40036E7B2 /* PostViewState.swift in Sources */,
 				B3F7473F2A8583E40036E7B2 /* ErrorService.swift in Sources */,
 				B3F7473B2A8583E40036E7B2 /* GetPostRequest.swift in Sources */,
 				B3F747362A8583E40036E7B2 /* UserService.swift in Sources */,
 				B3F747392A8583E40036E7B2 /* GetPostsRequest.swift in Sources */,
-				B3F747382A8583E40036E7B2 /* PostRequestProtocol.swift in Sources */,
 				B3F747302A8583E40036E7B2 /* UsersRepository.swift in Sources */,
 				B3F7472A2A8583E40036E7B2 /* PostCell.swift in Sources */,
 				B3F7473E2A8583E40036E7B2 /* GetUserRequest.swift in Sources */,

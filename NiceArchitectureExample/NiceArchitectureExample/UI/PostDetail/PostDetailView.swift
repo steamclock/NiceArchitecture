@@ -1,8 +1,9 @@
 //
 //  PostDetailView.swift
-//  MVVMSample
+//  NiceArchitectureExample
 //
 //  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import NiceArchitecture
@@ -12,43 +13,23 @@ struct PostDetailView: View {
     @ObservedObject var viewModel: PostDetailViewModel
 
     var body: some View {
+        // We provide default views for the other load states,
+        // if you're happy with those, you don't need to do anything.
         StatefulView(
             state: viewModel.contentLoadState,
             hasDataView: {
                 if let post = viewModel.post {
-                    postView(post)
-                } else {
-                    noDataView
-                }
-            }, errorView: { error in
-                VStack {
-                    if let error = error as? DisplayableError {
-                        Text(error.title)
-                        Text(error.message)
-                    } else {
-                        Text(error.localizedDescription)
-                    }
+                    VStack(alignment: .leading) {
+                        Text(post.title)
+                            .font(.largeTitle)
+                            .padding(.bottom, 50)
 
-                    Button("Reset") {
-                        viewModel.contentLoadState = .hasData
-                    }
+                        Text(post.body)
+
+                        Spacer()
+                    }.padding()
                 }
-            }, noDataView: {
-                noDataView
             }
         ).bindToVM(viewModel)
-    }
-
-    private func postView(_ post: Post) -> some View {
-        VStack {
-            Text(post.title)
-                .fontWeight(.semibold)
-
-            Text(post.body)
-        }.padding()
-    }
-
-    private var noDataView: some View {
-        Text("No Post 😓")
     }
 }

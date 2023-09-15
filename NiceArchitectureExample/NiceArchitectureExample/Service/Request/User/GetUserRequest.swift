@@ -1,15 +1,16 @@
 //
 //  GetUserRequest.swift
-//  MVVMSample
+//  NiceArchitectureExample
 //
-//  Created by Brendan on 2022-09-01.
+//  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Foundation
 import Netable
 
-// Fetch a list of all users from the placeholder API
-struct GetUserRequest: UserRequest {
+/// Fetch a single user from the placeholder API
+struct GetUserRequest: Request {
     typealias Parameters = [String: String]
     typealias RawResource = User
 

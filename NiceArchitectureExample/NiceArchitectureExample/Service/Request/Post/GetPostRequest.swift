@@ -1,15 +1,16 @@
 //
 //  GetPostRequest.swift
-//  MVVMSample
+//  NiceArchitectureExample
 //
-//  Created by Brendan on 2022-09-01.
+//  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Foundation
 import Netable
 
-// Fetch a list of all posts from the placeholder API
-struct GetPostRequest: PostRequest {
+/// Fetch a single post from the placeholder API
+struct GetPostRequest: Request {
     typealias Parameters = [String: Int]
     typealias RawResource = Post
 

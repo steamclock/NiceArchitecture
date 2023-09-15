@@ -17,8 +17,13 @@ public struct ErrorView: View {
 
     public var body: some View {
         VStack(alignment: .center) {
-            BodyText("Error:")
-            BodyText(error.localizedDescription)
+            if let error = error as? DisplayableError {
+                Text(error.title)
+                Text(error.message)
+            } else {
+                BodyText("Error:")
+                BodyText(error.localizedDescription)
+            }
         }
     }
 }

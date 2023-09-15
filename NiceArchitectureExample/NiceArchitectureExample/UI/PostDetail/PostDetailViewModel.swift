@@ -1,8 +1,9 @@
 //
 //  PostDetailViewModel.swift
-//  MVVMSample
+//  NiceArchitectureExample
 //
 //  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Combine
@@ -30,13 +31,15 @@ class PostDetailViewModel: ObservableVM {
         super.bindViewModel()
 
         fetchPostDetails()
-
-        contentLoadState = .loading
     }
 
     private func fetchPostDetails() {
+        contentLoadState = .loading
+
         Task { @MainActor in
             do {
+                sleep(1)
+                
                 self.post = try await postRepo.getPost(id: postId, cacheMode: .cacheOnly)
             } catch {
                 errorService.error.send(error)

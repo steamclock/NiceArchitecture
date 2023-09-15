@@ -1,14 +1,16 @@
 //
 //  InjectedValues.swift
-//  NiceArchitecture
+//  NiceArchitectureExample
 //
 //  Created by Brendan on 2022-08-31.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Foundation
 import NiceArchitecture
 
 extension InjectedValues {
+
     // REPOSITORIES
 
     var postRepository: PostRepositoryProtocol {

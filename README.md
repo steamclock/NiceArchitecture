@@ -2,7 +2,11 @@
 
 # NiceArchitecture
 
-This package, and attached example project, contains a bunch of tools and tricks we've found useful when developing apps with Swift, and more specifically SwiftUI.
+The repository is intended to be used as a more detailed reference for how we like to architect SwiftUI apps at Steamclock. [This blog post]()(coming soon™) goes over the architecture at a higher level - including goals, motivations, et cetera. 
+
+While our architecture is mostly a pretty standard MVVM setup, we emphasize modularity and testability with Dependency Injection, and include some novel concepts to handle navigation that may be less familiar to folks who are newer to MVVM.
+
+Additionaly, we've included a package (called NiceArchitecture) that provides a bunch of tools and helpers that we've found helpful when developing apps using this architecture. You can read more about its contents and what they do below, or check out the [example project](TODO) to see how they work in context.
 
 #### Index
  - [The Example Project](#the-example-project)
@@ -16,50 +20,39 @@ This package, and attached example project, contains a bunch of tools and tricks
 
 ## The Example Project
 
-In addition to giving examples of how to use all the utilities included in this package, the example project lays out our current preferred app architecture as of Jan 2023.
+The example project contained in this repository outlines how we like to architect SwiftUI apps as of August 2023. For more context, you should probably read the accompanying blog post (coming soon™) before digging in here.
 
-This includes sample Services, Repositories, View Models, Views, and some guidance for testing the whole mess.
+Once you're up to speed, it's probably best to get started in the PostsCoordinatorView (TODO: Link), then dive into the individual Views and their ViewModels from there. Rather than including more documentation for individual classes here, we've opted to include that information in-line in the example project, to give you a better idea of how things fit together in context. 
+
+Here's a quick reference:
+
+| Class | Example File | Link |
+| ----- | ------------ | ---- |
+| a | a | a |
+
 
 ## ContentLoadState
 
-When creating views, we frequently want to change the state of the view based on the state of the content that view is displaying.
+When managing Views, we frequently want to make sure that the state of the View matches whatever's happening in the background, and want this to be consistent across each View. To do this, we use a simple enum that contains the most important states a View may be in.
 
 - Loading: The content is currently loading
 - NoData: The content has loaded successfully, but is empty.
 - HasData: The content has loaded successfully
 - Error: Something's gone wrong
 
+To see this in action, check out the [PostsView](TODO).
+
 ## ObservableVM
 
-An observable VM provides a skeleton for a view model that manages a view's content, in addition to communicating with repositories and services.
+A lot of our ViewModels end up needing to share a lot of the same behaviour, like keeping track of their View's ContentLoadState, binding to Views, handling errors, managing Cancellables, etc. By extending ObservableVM, our ViewModels get a lot of that behaviour automatically, which also helps us make sure we don't forget any of the pieces when adding new ViewModels.
 
-See our complete [MVVM example project](https://github.com/steamclock/mvvm-ios/) for the full picture.
+To see a detailed example, check out the [PostsViewModel](TODO).
 
-## Stateful View
+## StatefulView
 
-StatefulView should be using in combination with `ObservableViewModel`'s `ContentLoadState` to provide a nice starting point for building views that react to their content state.
+Much like ObservableVM provides a starting point for writing new ViewModels, StatefulView provides a starting point for new Views that are bound to ObservableVMs. StatefulView allows a View to dynamically track its ContentLoadState and update appropriately. It also includes default states for the loading, error and noData states.
 
-```
-struct AStatefulView: View {
-    @ObservedObject var viewModel: AViewModel
-
-    var body: some View {
-        StatefulView(
-            state: viewModel.contentLoadState,
-            hasData: {
-                // Your fancy view goes here!
-            },
-            error: { error in
-                ACustomErrorView(error)
-            },
-            loadingView: {
-                Image("cat_toast_gif")
-            }
-        ).bindToVM(viewModel)
-    }
-```
-
-See [TODO: ADD FULL EXAMPLE LINK] for a complete example
+[PostsView](TODO) contains a more detailed example of how to use this.
 
 ## Dependency Injection
 

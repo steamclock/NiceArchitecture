@@ -1,19 +1,23 @@
 //
 //  PostsCoordinator.swift
-//  MVVMSample
+//  NiceArchitectureExample
 //
 //  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Foundation
 
+/// Since this is just a small example project, there isn't much to put here
+/// but normally this would contain all of the routes managed by this Coordinator.
 enum PostsRoute {
     case post(Int)
 }
 
-// Although it seems silly for a trivial example like this one,
-//    using a coordinator to handle navigation allows us to do things like drill down
-//    directly into a sub-page, which is suprisingly difficult with vanilla SwiftUI.
+/// A Coordinator is roughly analagous to UIKit's NavigationController,
+/// it should be responsible for holding references to each of the viewModels it manages
+/// and use that information, plus any changes in state, to decide which View to present.
+/// ViewModels can interact with their coordinator to update the state or navigate to other pages.
 class PostsCoordinator: ObservableObject, Coordinator {
     @Published var viewModel: PostsViewModel!
     @Published var postDetailViewModel: PostDetailViewModel?

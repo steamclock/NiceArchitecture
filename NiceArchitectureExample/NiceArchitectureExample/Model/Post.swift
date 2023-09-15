@@ -1,15 +1,16 @@
 //
-//  Models.swift
-//  MVVMSample
+//  Post.swift
+//  NiceArchitectureExample
 //
-//  Created by Nigel Brooke on 2021-04-29.
+//  Created by Brendan on 2022-09-09.
+//  Copyright © 2023 Steamclock Software. All rights reserved.
 //
 
 import Foundation
 
-// Network model object. Note: API has more fields than this, this is just the subset we need
-
-// A text post made by a particular user
+/// A text post made by a particular user.
+/// This model represents the object as returned by the network.
+/// Note that the API has more fields than this, but we only retain the subset we need.
 struct Post: Codable, Identifiable {
     var userId: Int
     var id: Int
