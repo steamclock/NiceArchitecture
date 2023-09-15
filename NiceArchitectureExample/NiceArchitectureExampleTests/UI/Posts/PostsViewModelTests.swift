@@ -29,7 +29,7 @@ class PostsViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.contentLoadState, .noData)
 
         let expectation = XCTestExpectation(description: "Posts should populate")
-        viewModel.$posts
+        viewModel.$allPosts
             .dropFirst()
             .sink { vm in
                 expectation.fulfill()

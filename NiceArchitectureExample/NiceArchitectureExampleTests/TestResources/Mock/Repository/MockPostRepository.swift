@@ -1,12 +1,13 @@
 //
 //  MockPostRepository.swift
-//  MVVMSampleTests
+//  NiceArchitectureExampleTests
 //
 //  Created by Brendan on 2022-09-09.
 //
 
 import Combine
 import Foundation
+import NiceArchitecture
 @testable import NiceArchitectureExample
 
 class MockPostRepository: PostRepositoryProtocol {

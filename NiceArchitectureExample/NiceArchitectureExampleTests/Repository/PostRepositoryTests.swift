@@ -30,7 +30,7 @@ class PostRepositoryTests: XCTestCase {
             }.store(in: &cancellables)
 
         Task {
-            let post = try? await postRepository.getPost(id: "1", cacheMode: .cacheAndUpdate)
+            let post = try? await postRepository.getPost(id: 1, cacheMode: .cacheAndUpdate)
 
             XCTAssertNotNil(post)
         }

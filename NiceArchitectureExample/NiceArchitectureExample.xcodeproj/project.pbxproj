@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B38822182AB4C94600AFFA28 /* NiceArchitectureExampleTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */; };
+		B38822202AB4C9E200AFFA28 /* NiceArchitectureExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388221F2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.swift */; };
+		B388222C2AB4CB4300AFFA28 /* NiceArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B388222B2AB4CB4300AFFA28 /* NiceArchitecture */; };
+		B388223F2AB4CC5100AFFA28 /* PostsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38822302AB4CC5100AFFA28 /* PostsViewModelTests.swift */; };
+		B38822402AB4CC5100AFFA28 /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38822322AB4CC5100AFFA28 /* PostRepositoryTests.swift */; };
+		B38822412AB4CC5100AFFA28 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38822342AB4CC5100AFFA28 /* TestData.swift */; };
+		B38822422AB4CC5100AFFA28 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38822372AB4CC5100AFFA28 /* MockUserRepository.swift */; };
+		B38822432AB4CC5100AFFA28 /* MockPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38822382AB4CC5100AFFA28 /* MockPostRepository.swift */; };
+		B38822442AB4CC5100AFFA28 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388223A2AB4CC5100AFFA28 /* MockPostService.swift */; };
+		B38822452AB4CC5100AFFA28 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223C2AB4CC5100AFFA28 /* Users.json */; };
+		B38822462AB4CC5100AFFA28 /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223D2AB4CC5100AFFA28 /* Posts.json */; };
 		B3DC7BB82A8AE55000601348 /* EmptyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */; };
 		B3F746E42A8568B90036E7B2 /* NiceArchitectureExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */; };
 		B3F747272A8583E40036E7B2 /* PostsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */; };
@@ -32,39 +41,38 @@
 		B3F7473C2A8583E40036E7B2 /* GetUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747232A8583E40036E7B2 /* GetUsersRequest.swift */; };
 		B3F7473E2A8583E40036E7B2 /* GetUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747252A8583E40036E7B2 /* GetUserRequest.swift */; };
 		B3F7473F2A8583E40036E7B2 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747262A8583E40036E7B2 /* ErrorService.swift */; };
-		B3F747582A85874D0036E7B2 /* MVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746EE2A8569620036E7B2 /* MVVMSampleTests.swift */; };
-		B3F747592A8587510036E7B2 /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747412A8584C00036E7B2 /* PostRepositoryTests.swift */; };
-		B3F7475A2A8587540036E7B2 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747432A8584C00036E7B2 /* TestData.swift */; };
-		B3F7475B2A8587580036E7B2 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747462A8584C00036E7B2 /* MockUserRepository.swift */; };
-		B3F7475C2A8587580036E7B2 /* MockPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747472A8584C00036E7B2 /* MockPostRepository.swift */; };
-		B3F7475D2A85875C0036E7B2 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747492A8584C00036E7B2 /* MockPostService.swift */; };
-		B3F7475E2A85875F0036E7B2 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = B3F7474B2A8584C00036E7B2 /* Users.json */; };
-		B3F7475F2A85875F0036E7B2 /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = B3F7474C2A8584C00036E7B2 /* Posts.json */; };
-		B3F747602A8587630036E7B2 /* PostsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7474F2A8584C00036E7B2 /* PostsViewModelTests.swift */; };
 		B3F747632A8589300036E7B2 /* NiceArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B3F747622A8589300036E7B2 /* NiceArchitecture */; };
 		B3F747652A858D290036E7B2 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747642A858D290036E7B2 /* InjectedValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A62B225F263BABA500A0136E /* PBXContainerItemProxy */ = {
+		B38822212AB4C9E200AFFA28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A62B2245263BABA400A0136E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A62B224C263BABA400A0136E;
-			remoteInfo = MVVMSample;
+			remoteInfo = NiceArchitectureExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A62B224D263BABA400A0136E /* NiceArchitectureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceArchitectureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceArchitectureExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30BF1452A8564AE009CD570 /* niceArchitecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = niceArchitecture; path = ..; sourceTree = "<group>"; };
+		B388221D2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceArchitectureExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B388221F2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceArchitectureExampleTests.swift; sourceTree = "<group>"; };
+		B38822302AB4CC5100AFFA28 /* PostsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModelTests.swift; sourceTree = "<group>"; };
+		B38822322AB4CC5100AFFA28 /* PostRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
+		B38822342AB4CC5100AFFA28 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		B38822372AB4CC5100AFFA28 /* MockUserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		B38822382AB4CC5100AFFA28 /* MockPostRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPostRepository.swift; sourceTree = "<group>"; };
+		B388223A2AB4CC5100AFFA28 /* MockPostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
+		B388223C2AB4CC5100AFFA28 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		B388223D2AB4CC5100AFFA28 /* Posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Posts.json; sourceTree = "<group>"; };
+		B388223E2AB4CC5100AFFA28 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPostCell.swift; sourceTree = "<group>"; };
 		B3F746C32A85680C0036E7B2 /* NiceArchitectureExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiceArchitectureExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3F746D82A8568680036E7B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceArchitectureExampleApp.swift; sourceTree = "<group>"; };
-		B3F746EE2A8569620036E7B2 /* MVVMSampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMSampleTests.swift; sourceTree = "<group>"; };
-		B3F746F02A8569620036E7B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsCoordinatorView.swift; sourceTree = "<group>"; };
 		B3F747052A8583E40036E7B2 /* PostsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
 		B3F747072A8583E40036E7B2 /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
@@ -87,14 +95,6 @@
 		B3F747232A8583E40036E7B2 /* GetUsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsersRequest.swift; sourceTree = "<group>"; };
 		B3F747252A8583E40036E7B2 /* GetUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRequest.swift; sourceTree = "<group>"; };
 		B3F747262A8583E40036E7B2 /* ErrorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
-		B3F747412A8584C00036E7B2 /* PostRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
-		B3F747432A8584C00036E7B2 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
-		B3F747462A8584C00036E7B2 /* MockUserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
-		B3F747472A8584C00036E7B2 /* MockPostRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPostRepository.swift; sourceTree = "<group>"; };
-		B3F747492A8584C00036E7B2 /* MockPostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
-		B3F7474B2A8584C00036E7B2 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
-		B3F7474C2A8584C00036E7B2 /* Posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Posts.json; sourceTree = "<group>"; };
-		B3F7474F2A8584C00036E7B2 /* PostsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModelTests.swift; sourceTree = "<group>"; };
 		B3F747612A85884B0036E7B2 /* niceArchitecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = niceArchitecture; path = ..; sourceTree = "<group>"; };
 		B3F747642A858D290036E7B2 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		C6C97FC728EF3EDA0089586C /* steamclutility-belt */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "steamclutility-belt"; path = ..; sourceTree = "<group>"; };
@@ -109,10 +109,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A62B225B263BABA500A0136E /* Frameworks */ = {
+		B388221A2AB4C9E100AFFA28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B388222C2AB4CB4300AFFA28 /* NiceArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,9 +123,9 @@
 		A62B2244263BABA400A0136E = {
 			isa = PBXGroup;
 			children = (
-				B3F746EB2A8569410036E7B2 /* NiceArchitectureTests */,
 				B3F746DA2A85686E0036E7B2 /* NiceArchitectureExample */,
 				C6C97FC628EF3EDA0089586C /* Packages */,
+				B388221E2AB4C9E200AFFA28 /* NiceArchitectureExampleTests */,
 				A62B224E263BABA400A0136E /* Products */,
 				C6C97FC828EF3EEF0089586C /* Frameworks */,
 				B3F746C32A85680C0036E7B2 /* NiceArchitectureExample-Bridging-Header.h */,
@@ -135,9 +136,90 @@
 			isa = PBXGroup;
 			children = (
 				A62B224D263BABA400A0136E /* NiceArchitectureExample.app */,
-				A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */,
+				B388221D2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B388221E2AB4C9E200AFFA28 /* NiceArchitectureExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B388223E2AB4CC5100AFFA28 /* Info.plist */,
+				B38822312AB4CC5100AFFA28 /* Repository */,
+				B388222E2AB4CC5100AFFA28 /* UI */,
+				B38822332AB4CC5100AFFA28 /* TestResources */,
+				B388221F2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.swift */,
+			);
+			path = NiceArchitectureExampleTests;
+			sourceTree = "<group>";
+		};
+		B388222E2AB4CC5100AFFA28 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B388222F2AB4CC5100AFFA28 /* Posts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B388222F2AB4CC5100AFFA28 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				B38822302AB4CC5100AFFA28 /* PostsViewModelTests.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		B38822312AB4CC5100AFFA28 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B38822322AB4CC5100AFFA28 /* PostRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B38822332AB4CC5100AFFA28 /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				B38822342AB4CC5100AFFA28 /* TestData.swift */,
+				B38822352AB4CC5100AFFA28 /* Mock */,
+				B388223B2AB4CC5100AFFA28 /* JSON */,
+			);
+			path = TestResources;
+			sourceTree = "<group>";
+		};
+		B38822352AB4CC5100AFFA28 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B38822362AB4CC5100AFFA28 /* Repository */,
+				B38822392AB4CC5100AFFA28 /* Service */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		B38822362AB4CC5100AFFA28 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B38822372AB4CC5100AFFA28 /* MockUserRepository.swift */,
+				B38822382AB4CC5100AFFA28 /* MockPostRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B38822392AB4CC5100AFFA28 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B388223A2AB4CC5100AFFA28 /* MockPostService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B388223B2AB4CC5100AFFA28 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B388223C2AB4CC5100AFFA28 /* Users.json */,
+				B388223D2AB4CC5100AFFA28 /* Posts.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		B3F746DA2A85686E0036E7B2 /* NiceArchitectureExample */ = {
@@ -154,18 +236,6 @@
 				B3F746D82A8568680036E7B2 /* Info.plist */,
 			);
 			path = NiceArchitectureExample;
-			sourceTree = "<group>";
-		};
-		B3F746EB2A8569410036E7B2 /* NiceArchitectureTests */ = {
-			isa = PBXGroup;
-			children = (
-				B3F746F02A8569620036E7B2 /* Info.plist */,
-				B3F746EE2A8569620036E7B2 /* MVVMSampleTests.swift */,
-				B3F747402A8584C00036E7B2 /* Repository */,
-				B3F747422A8584C00036E7B2 /* TestResources */,
-				B3F7474D2A8584C00036E7B2 /* UI */,
-			);
-			path = NiceArchitectureTests;
 			sourceTree = "<group>";
 		};
 		B3F747012A8583C60036E7B2 /* Helper */ = {
@@ -289,75 +359,6 @@
 			path = User;
 			sourceTree = "<group>";
 		};
-		B3F747402A8584C00036E7B2 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				B3F747412A8584C00036E7B2 /* PostRepositoryTests.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		B3F747422A8584C00036E7B2 /* TestResources */ = {
-			isa = PBXGroup;
-			children = (
-				B3F747432A8584C00036E7B2 /* TestData.swift */,
-				B3F747442A8584C00036E7B2 /* Mock */,
-				B3F7474A2A8584C00036E7B2 /* JSON */,
-			);
-			path = TestResources;
-			sourceTree = "<group>";
-		};
-		B3F747442A8584C00036E7B2 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				B3F747452A8584C00036E7B2 /* Repository */,
-				B3F747482A8584C00036E7B2 /* Service */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		B3F747452A8584C00036E7B2 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				B3F747462A8584C00036E7B2 /* MockUserRepository.swift */,
-				B3F747472A8584C00036E7B2 /* MockPostRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		B3F747482A8584C00036E7B2 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				B3F747492A8584C00036E7B2 /* MockPostService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		B3F7474A2A8584C00036E7B2 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				B3F7474B2A8584C00036E7B2 /* Users.json */,
-				B3F7474C2A8584C00036E7B2 /* Posts.json */,
-			);
-			path = JSON;
-			sourceTree = "<group>";
-		};
-		B3F7474D2A8584C00036E7B2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				B3F7474E2A8584C00036E7B2 /* Posts */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		B3F7474E2A8584C00036E7B2 /* Posts */ = {
-			isa = PBXGroup;
-			children = (
-				B3F7474F2A8584C00036E7B2 /* PostsViewModelTests.swift */,
-			);
-			path = Posts;
-			sourceTree = "<group>";
-		};
 		C6C97FC628EF3EDA0089586C /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,22 +399,25 @@
 			productReference = A62B224D263BABA400A0136E /* NiceArchitectureExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A62B225D263BABA500A0136E /* NiceArchitectureExampleTests */ = {
+		B388221C2AB4C9E100AFFA28 /* NiceArchitectureExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A62B2275263BABA500A0136E /* Build configuration list for PBXNativeTarget "NiceArchitectureExampleTests" */;
+			buildConfigurationList = B38822232AB4C9E200AFFA28 /* Build configuration list for PBXNativeTarget "NiceArchitectureExampleTests" */;
 			buildPhases = (
-				A62B225A263BABA500A0136E /* Sources */,
-				A62B225B263BABA500A0136E /* Frameworks */,
-				A62B225C263BABA500A0136E /* Resources */,
+				B38822192AB4C9E100AFFA28 /* Sources */,
+				B388221A2AB4C9E100AFFA28 /* Frameworks */,
+				B388221B2AB4C9E100AFFA28 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A62B2260263BABA500A0136E /* PBXTargetDependency */,
+				B38822222AB4C9E200AFFA28 /* PBXTargetDependency */,
 			);
 			name = NiceArchitectureExampleTests;
-			productName = MVVMSampleTests;
-			productReference = A62B225E263BABA500A0136E /* NiceArchitectureExampleTests.xctest */;
+			packageProductDependencies = (
+				B388222B2AB4CB4300AFFA28 /* NiceArchitecture */,
+			);
+			productName = NiceArchitectureExampleTests;
+			productReference = B388221D2AB4C9E200AFFA28 /* NiceArchitectureExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -422,15 +426,15 @@
 		A62B2245263BABA400A0136E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					A62B224C263BABA400A0136E = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1430;
 					};
-					A62B225D263BABA500A0136E = {
-						CreatedOnToolsVersion = 12.5;
+					B388221C2AB4C9E100AFFA28 = {
+						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = A62B224C263BABA400A0136E;
 					};
 				};
@@ -451,7 +455,7 @@
 			projectRoot = "";
 			targets = (
 				A62B224C263BABA400A0136E /* NiceArchitectureExample */,
-				A62B225D263BABA500A0136E /* NiceArchitectureExampleTests */,
+				B388221C2AB4C9E100AFFA28 /* NiceArchitectureExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,13 +470,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A62B225C263BABA500A0136E /* Resources */ = {
+		B388221B2AB4C9E100AFFA28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F7475E2A85875F0036E7B2 /* Users.json in Resources */,
-				B3F7475F2A85875F0036E7B2 /* Posts.json in Resources */,
-				B38822182AB4C94600AFFA28 /* NiceArchitectureExampleTests.xctest in Resources */,
+				B38822452AB4CC5100AFFA28 /* Users.json in Resources */,
+				B38822462AB4CC5100AFFA28 /* Posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,27 +512,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A62B225A263BABA500A0136E /* Sources */ = {
+		B38822192AB4C9E100AFFA28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F7475B2A8587580036E7B2 /* MockUserRepository.swift in Sources */,
-				B3F7475A2A8587540036E7B2 /* TestData.swift in Sources */,
-				B3F747582A85874D0036E7B2 /* MVVMSampleTests.swift in Sources */,
-				B3F7475C2A8587580036E7B2 /* MockPostRepository.swift in Sources */,
-				B3F747592A8587510036E7B2 /* PostRepositoryTests.swift in Sources */,
-				B3F747602A8587630036E7B2 /* PostsViewModelTests.swift in Sources */,
-				B3F7475D2A85875C0036E7B2 /* MockPostService.swift in Sources */,
+				B388223F2AB4CC5100AFFA28 /* PostsViewModelTests.swift in Sources */,
+				B38822442AB4CC5100AFFA28 /* MockPostService.swift in Sources */,
+				B38822402AB4CC5100AFFA28 /* PostRepositoryTests.swift in Sources */,
+				B38822432AB4CC5100AFFA28 /* MockPostRepository.swift in Sources */,
+				B38822422AB4CC5100AFFA28 /* MockUserRepository.swift in Sources */,
+				B38822412AB4CC5100AFFA28 /* TestData.swift in Sources */,
+				B38822202AB4C9E200AFFA28 /* NiceArchitectureExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A62B2260263BABA500A0136E /* PBXTargetDependency */ = {
+		B38822222AB4C9E200AFFA28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A62B224C263BABA400A0136E /* NiceArchitectureExample */;
-			targetProxy = A62B225F263BABA500A0136E /* PBXContainerItemProxy */;
+			targetProxy = B38822212AB4C9E200AFFA28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,47 +702,43 @@
 			};
 			name = Release;
 		};
-		A62B2276263BABA500A0136E /* Debug */ = {
+		B38822242AB4C9E200AFFA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GH868RP95T;
-				INFOPLIST_FILE = MVVMSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.NiceArchitectureExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMSample.app/MVVMSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceArchitectureExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NiceArchitectureExample";
 			};
 			name = Debug;
 		};
-		A62B2277263BABA500A0136E /* Release */ = {
+		B38822252AB4C9E200AFFA28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GH868RP95T;
-				INFOPLIST_FILE = MVVMSampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.steamclock.NiceArchitectureExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMSample.app/MVVMSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiceArchitectureExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NiceArchitectureExample";
 			};
 			name = Release;
 		};
@@ -764,11 +763,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A62B2275263BABA500A0136E /* Build configuration list for PBXNativeTarget "NiceArchitectureExampleTests" */ = {
+		B38822232AB4C9E200AFFA28 /* Build configuration list for PBXNativeTarget "NiceArchitectureExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A62B2276263BABA500A0136E /* Debug */,
-				A62B2277263BABA500A0136E /* Release */,
+				B38822242AB4C9E200AFFA28 /* Debug */,
+				B38822252AB4C9E200AFFA28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -776,6 +775,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B388222B2AB4CB4300AFFA28 /* NiceArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NiceArchitecture;
+		};
 		B3F747622A8589300036E7B2 /* NiceArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NiceArchitecture;

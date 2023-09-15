@@ -1,6 +1,6 @@
 //
 //  MockUserRepository.swift
-//  MVVMSampleTests
+//  NiceArchitectureExampleTests
 //
 //  Created by Brendan on 2022-09-09.
 //
