@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1546AED12ABB9C4000D49972 /* NiceUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 1546AED02ABB9C4000D49972 /* NiceUtilities */; };
+		1546AED42ABB9C7B00D49972 /* Netable in Frameworks */ = {isa = PBXBuildFile; productRef = 1546AED32ABB9C7B00D49972 /* Netable */; };
 		239B0352265D73E500D20CE7 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239B0351265D73E500D20CE7 /* UsersRepository.swift */; };
 		239B0354265D73F300D20CE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239B0353265D73F300D20CE7 /* User.swift */; };
 		A62B2251263BABA400A0136E /* MVVMSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2250263BABA400A0136E /* MVVMSampleApp.swift */; };
@@ -42,7 +44,6 @@
 		C6AA2F0028CB9AAC00731528 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = C6AA2EFF28CB9AAC00731528 /* Users.json */; };
 		C6AA2F0228CBAD1B00731528 /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0128CBAD1B00731528 /* PostRepositoryTests.swift */; };
 		C6AA2F0528CBAE9500731528 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA2F0428CBAE9500731528 /* MockPostService.swift */; };
-		C6C97FCA28EF3EEF0089586C /* SteamclUtilityBelt in Frameworks */ = {isa = PBXBuildFile; productRef = C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */; };
 		C6C97FCC28EF43A60089586C /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C97FCB28EF43A60089586C /* InjectedValues.swift */; };
 		C6DBE1A428CBEDEC0072C63D /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBE1A328CBEDEC0072C63D /* PostDetailView.swift */; };
 		C6DBE1A628CBEE090072C63D /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBE1A528CBEE090072C63D /* PostDetailViewModel.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154F45752ABB9B9B004382AA /* NiceUtilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NiceUtilities; path = ..; sourceTree = "<group>"; };
 		239B0351265D73E500D20CE7 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
 		239B0353265D73F300D20CE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A62B224D263BABA400A0136E /* MVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +109,6 @@
 		C6AA2EFF28CB9AAC00731528 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		C6AA2F0128CBAD1B00731528 /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
 		C6AA2F0428CBAE9500731528 /* MockPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
-		C6C97FC728EF3EDA0089586C /* steamclutility-belt */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "steamclutility-belt"; path = ..; sourceTree = "<group>"; };
 		C6C97FCB28EF43A60089586C /* InjectedValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		C6DBE1A328CBEDEC0072C63D /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		C6DBE1A528CBEE090072C63D /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
@@ -118,7 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C97FCA28EF3EEF0089586C /* SteamclUtilityBelt in Frameworks */,
+				1546AED42ABB9C7B00D49972 /* Netable in Frameworks */,
+				1546AED12ABB9C4000D49972 /* NiceUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154F45742ABB9B9B004382AA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				154F45752ABB9B9B004382AA /* NiceUtilities */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		239B035E265D7F4C00D20CE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +203,7 @@
 		A62B2244263BABA400A0136E = {
 			isa = PBXGroup;
 			children = (
-				C6C97FC628EF3EDA0089586C /* Packages */,
+				154F45742ABB9B9B004382AA /* Packages */,
 				A62B224F263BABA400A0136E /* MVVMSample */,
 				A62B2261263BABA500A0136E /* MVVMSampleTests */,
 				A62B226C263BABA500A0136E /* MVVMSampleUITests */,
@@ -374,14 +384,6 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		C6C97FC628EF3EDA0089586C /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				C6C97FC728EF3EDA0089586C /* steamclutility-belt */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		C6C97FC828EF3EEF0089586C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,7 +425,8 @@
 			);
 			name = MVVMSample;
 			packageProductDependencies = (
-				C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */,
+				1546AED02ABB9C4000D49972 /* NiceUtilities */,
+				1546AED32ABB9C7B00D49972 /* Netable */,
 			);
 			productName = MVVMSample;
 			productReference = A62B224D263BABA400A0136E /* MVVMSample.app */;
@@ -497,6 +500,7 @@
 			);
 			mainGroup = A62B2244263BABA400A0136E;
 			packageReferences = (
+				1546AED22ABB9C7B00D49972 /* XCRemoteSwiftPackageReference "netable" */,
 			);
 			productRefGroup = A62B224E263BABA400A0136E /* Products */;
 			projectDirPath = "";
@@ -732,6 +736,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MVVMSample/Preview Content\"";
+				DEVELOPMENT_TEAM = U6QY52B697;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MVVMSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -753,6 +758,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MVVMSample/Preview Content\"";
+				DEVELOPMENT_TEAM = U6QY52B697;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MVVMSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -888,10 +894,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1546AED22ABB9C7B00D49972 /* XCRemoteSwiftPackageReference "netable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:steamclock/netable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		C6C97FC928EF3EEF0089586C /* SteamclUtilityBelt */ = {
+		1546AED02ABB9C4000D49972 /* NiceUtilities */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = SteamclUtilityBelt;
+			productName = NiceUtilities;
+		};
+		1546AED32ABB9C7B00D49972 /* Netable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1546AED22ABB9C7B00D49972 /* XCRemoteSwiftPackageReference "netable" */;
+			productName = Netable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
