@@ -5,26 +5,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "44e891bdb61426a95e31492a67c7c0dfad1f87c5",
-        "version" : "7.4.1"
+        "revision" : "b6f62758f21a8c03cd64f4009c037cfa580a256e",
+        "version" : "7.9.1"
       }
     },
     {
-      "identity" : "netable",
+      "identity" : "nicecomponents",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/netable.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "96623a3dce12c463ecc249442a0b4ecb6c87e16d"
-      }
-    },
-    {
-      "identity" : "nice_components",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/nice_components.git",
+      "location" : "https://github.com/steamclock/niceComponents.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d7ca2437e7f41a761b10f9736fc6a81ff256db1c"
+        "revision" : "254031ddbebf5d82452693071b35535a6e12514e"
       }
     },
     {
