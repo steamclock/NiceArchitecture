@@ -17,6 +17,7 @@
 		B38822442AB4CC5100AFFA28 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388223A2AB4CC5100AFFA28 /* MockPostService.swift */; };
 		B38822452AB4CC5100AFFA28 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223C2AB4CC5100AFFA28 /* Users.json */; };
 		B38822462AB4CC5100AFFA28 /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223D2AB4CC5100AFFA28 /* Posts.json */; };
+		B38822492AB4F04000AFFA28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B38822482AB4F04000AFFA28 /* README.md */; };
 		B3DC7BB82A8AE55000601348 /* EmptyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */; };
 		B3F746E42A8568B90036E7B2 /* NiceArchitectureExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */; };
 		B3F747272A8583E40036E7B2 /* PostsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */; };
@@ -69,6 +70,7 @@
 		B388223C2AB4CC5100AFFA28 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		B388223D2AB4CC5100AFFA28 /* Posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Posts.json; sourceTree = "<group>"; };
 		B388223E2AB4CC5100AFFA28 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38822482AB4F04000AFFA28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPostCell.swift; sourceTree = "<group>"; };
 		B3F746C32A85680C0036E7B2 /* NiceArchitectureExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiceArchitectureExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3F746D82A8568680036E7B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -226,14 +228,15 @@
 			isa = PBXGroup;
 			children = (
 				B3F7470E2A8583E40036E7B2 /* Assets.xcassets */,
-				B3F747142A8583E40036E7B2 /* Model */,
+				B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */,
+				B38822482AB4F04000AFFA28 /* README.md */,
+				B3F746D82A8568680036E7B2 /* Info.plist */,
+				B3F747012A8583C60036E7B2 /* Helper */,
 				B3F747122A8583E40036E7B2 /* Preview Content */,
+				B3F747142A8583E40036E7B2 /* Model */,
 				B3F7470F2A8583E40036E7B2 /* Repository */,
 				B3F747192A8583E40036E7B2 /* Service */,
 				B3F747022A8583E40036E7B2 /* UI */,
-				B3F747012A8583C60036E7B2 /* Helper */,
-				B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */,
-				B3F746D82A8568680036E7B2 /* Info.plist */,
 			);
 			path = NiceArchitectureExample;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38822492AB4F04000AFFA28 /* README.md in Resources */,
 				B3F747312A8583E40036E7B2 /* Preview Assets.xcassets in Resources */,
 				B3F7472E2A8583E40036E7B2 /* Assets.xcassets in Resources */,
 			);

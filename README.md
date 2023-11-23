@@ -2,11 +2,11 @@
 
 # NiceArchitecture
 
-The repository is intended to be used as a more detailed reference for how we like to architect SwiftUI apps at Steamclock. [This blog post]()(coming soon™) goes over the architecture at a higher level - including goals, motivations, et cetera. 
+This repository is intended to be used as a more detailed reference for how we like to architect SwiftUI apps at Steamclock. [This blog post]()(coming soon™) goes over the architecture at a higher level - including goals, motivations, et cetera, while this repo digs into the specifics of how you might implement NiceArchitecture in the wild.
 
-While our architecture is mostly a pretty standard MVVM setup, we emphasize modularity and testability with Dependency Injection, and include some novel concepts to handle navigation that may be less familiar to folks who are newer to MVVM.
+For the most part, NiceArchitecture sticks with the standard MVVM concepts most mobile developers are familiar with like ViewModels, Repositories, and Services, but adds in a little spice with the concept of ViewCoordinators to handle navigation, and opinions on things like Dependency Injection and how to manage a screen’s load state.
 
-Additionaly, we've included a package (called NiceArchitecture) that provides a bunch of tools and helpers that we've found helpful when developing apps using this architecture. You can read more about its contents and what they do below, or check out the [example project](TODO) to see how they work in context.
+Additionally, we've included a package (also called NiceArchitecture) that provides a bunch of tools and helpers that we've found useful when developing apps under this architecture. You can read more about its contents and what they do below, or check out the [example project](TODO) to see how they work in context.
 
 #### Index
  - [The Example Project](#the-example-project)
