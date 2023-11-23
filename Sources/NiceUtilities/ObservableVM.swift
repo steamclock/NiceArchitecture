@@ -41,7 +41,7 @@ open class ObservableVM: ObservableObject {
 
     // While we want to make sure that by default, view models receive error signals,
     //   different view models may want to handle, or suppress, certain errors.
-    func bindDisplayableError() {
+    open func bindDisplayableError() {
         errorService.didReceiveDisplayableError
             .receive(on: RunLoop.main)
             .sink { [weak self] displayError in
@@ -49,7 +49,7 @@ open class ObservableVM: ObservableObject {
             }.store(in: &cancellables)
     }
 
-    func handleDisplayableError(_ error: DisplayableError) {
+    open func handleDisplayableError(_ error: DisplayableError) {
         /// Depending on what you'd like to do here, or how you'd like to display your error you have two options:
         /// 1. You can show the error in-line using content load state
         /// 2. You can use displayErrorAlert to show the error as a popup
