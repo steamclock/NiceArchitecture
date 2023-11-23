@@ -38,9 +38,9 @@ open class ObservableVM: ObservableObject {
         baseBindCalled = true
     }
 
-    // While we want to make sure that be default, view models receive error signals,
+    // While we want to make sure that by default, view models receive error signals,
     //   different view models may want to handle, or suppress, certain errors.
-    private final func bindDisplayableError() {
+    func bindDisplayableError() {
         errorService.didReceiveDisplayableError
             .receive(on: RunLoop.main)
             .sink { [weak self] displayError in
@@ -48,7 +48,7 @@ open class ObservableVM: ObservableObject {
             }.store(in: &cancellables)
     }
 
-    private func handleDisplayableError(_ error: DisplayableError) {
+    func handleDisplayableError(_ error: DisplayableError) {
         contentLoadState = .error(error: error)
     }
 
