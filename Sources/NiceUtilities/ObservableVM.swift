@@ -16,6 +16,7 @@ open class ObservableVM: ObservableObject {
     public var cancellables: [AnyCancellable] = []
 
     @Published public var contentLoadState: ContentLoadState = .noData
+    @Published public var displayErrorAlert: DisplayableError?
 
     private(set) var baseBindCalled = false
     private(set) var baseUnbindCalled = false
@@ -49,10 +50,29 @@ open class ObservableVM: ObservableObject {
     }
 
     func handleDisplayableError(_ error: DisplayableError) {
-        contentLoadState = .error(error: error)
+        /// Depending on what you'd like to do here, or how you'd like to display your error you have two options:
+        /// 1. You can show the error in-line using content load state
+        /// 2. You can use displayErrorAlert to show the error as a popup
+//        contentLoadState = .error(error: error)
+        displayErrorAlert = error
     }
 
     public func triggerError() {
         errorService.error.send(UnknownError(message: "You triggered an error!"))
+    }
+
+    func errorAlert(onDismiss: (() -> Void)? = nil) -> Alert {
+        if let error = displayErrorAlert {
+            return Alert(
+                title: Text(error.title),
+                message: Text(error.message),
+                dismissButton: .default(Text("Ok")) {
+                    onDismiss?()
+                    self.displayErrorAlert = nil
+                }
+            )
+        } else {
+            return Alert(title: Text("Unhandled Error"))
+        }
     }
 }

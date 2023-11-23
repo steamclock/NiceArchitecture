@@ -31,6 +31,7 @@ public struct BindToVM: ViewModifier {
                     fatalError("Observable view model base unbindViewModel was not called, you probably forgot to call super.unbindViewModel() in your overridden unbindViewModel function")
                 }
             }
+            .errorAlert($viewModel.displayErrorAlert, alert: viewModel.errorAlert)
     }
 }
 
