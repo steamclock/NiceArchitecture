@@ -20,24 +20,17 @@ Additionally, we've included a package (also called NiceArchitecture) that provi
 
 ## The Example Project
 
-The example project contained in this repository outlines how we like to architect SwiftUI apps as of August 2023. For more context, you should probably read the accompanying blog post (coming soon™) before digging in here.
+The example project contained in this repository outlines how we like to architect SwiftUI apps as of December 2023. For more context, you should probably read the accompanying blog post (coming soon™) before digging in here.
 
 Once you're up to speed, it's probably best to get started in the PostsCoordinatorView (TODO: Link), then dive into the individual Views and their ViewModels from there. Rather than including more documentation for individual classes here, we've opted to include that information in-line in the example project, to give you a better idea of how things fit together in context. 
 
-Here's a quick reference:
-
-| Class | Example File | Link |
-| ----- | ------------ | ---- |
-| a | a | a |
-
-
 ## ContentLoadState
 
-When managing Views, we frequently want to make sure that the state of the View matches whatever's happening in the background, and want this to be consistent across each View. To do this, we use a simple enum that contains the most important states a View may be in.
+When managing Views, we frequently want to make sure that the state of the View matches whatever's happening in the background, and want this to be consistent across each View. To do this, we use a simple enum that contains the most important states a View may be in:
 
 - Loading: The content is currently loading
-- NoData: The content has loaded successfully, but is empty.
 - HasData: The content has loaded successfully
+- NoData: The content has loaded successfully, but is empty.
 - Error: Something's gone wrong
 
 To see this in action, check out the [PostsView](TODO).
@@ -179,7 +172,7 @@ In addition, we provide two common error types:
 
 The provided `CacheService` allows Repositories to create and manage their own caches. While you could inject a shared cache into each repository, we recommend creating a separate cache for each repository unless you've got a good reason not to.
 
-See our [MVVM example project](https://github.com/steamclock/mvvm-ios/) for a complete example.
+Alternatively, you can use CurrentValueSubjects in your Repositories to handle caching for you.
 
 ## Array+Cancellable
 
