@@ -5,23 +5,14 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "c75584ac759cbb16b204d0a7de3ebf53ea6b304d",
-        "version" : "7.9.0"
+        "revision" : "add0a87ec4e31e2ca2a0b2085f0559201e4f5918",
+        "version" : "7.10.1"
       }
     },
     {
-      "identity" : "netable",
+      "identity" : "nicecomponents",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/netable.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "96623a3dce12c463ecc249442a0b4ecb6c87e16d"
-      }
-    },
-    {
-      "identity" : "nice_components",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/nice_components.git",
+      "location" : "https://github.com/steamclock/niceComponents.git",
       "state" : {
         "branch" : "main",
         "revision" : "254031ddbebf5d82452693071b35535a6e12514e"
@@ -32,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getsentry/sentry-cocoa",
       "state" : {
-        "revision" : "04bee4ad86d74d4cb4d7101ff826d6e355301ba9",
-        "version" : "8.9.4"
+        "revision" : "14aa6e47b03b820fd2b338728637570b9e969994",
+        "version" : "8.12.0"
       }
     },
     {

@@ -38,7 +38,7 @@ open class ObservableVM: ObservableObject {
         baseBindCalled = true
     }
 
-    // While we want to make sure that be default, view models receive error signals,
+    // While we want to make sure that by default, view models receive error signals,
     //   different view models may want to handle, or suppress, certain errors.
     open func bindDisplayableError() {
         errorService.didReceiveDisplayableError
