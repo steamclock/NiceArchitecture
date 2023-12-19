@@ -6,7 +6,7 @@ This repository is intended to be used as a more detailed reference for how we l
 
 For the most part, NiceArchitecture sticks with the standard MVVM concepts most mobile developers are familiar with like ViewModels, Repositories, and Services, but adds in a little spice with the concept of ViewCoordinators to handle navigation, and opinions on things like Dependency Injection and how to manage a screen’s load state.
 
-Additionally, we've included a package (also called NiceArchitecture) that provides a bunch of tools and helpers that we've found useful when developing apps under this architecture. You can read more about its contents and what they do below, or check out the [example project](TODO) to see how they work in context.
+Additionally, we've included a package (also called NiceArchitecture) that provides a bunch of tools and helpers that we've found useful when developing apps under this architecture. You can read more about its contents and what they do below, or check out the [example project](https://github.com/steamclock/NiceArchitecture/tree/main/NiceArchitectureExample/NiceArchitectureExample) to see how they work in context.
 
 #### Index
  - [The Example Project](#the-example-project)
@@ -33,19 +33,19 @@ When managing Views, we frequently want to make sure that the state of the View 
 - NoData: The content has loaded successfully, but is empty.
 - Error: Something's gone wrong
 
-To see this in action, check out the [PostsView](TODO).
+To see this in action, check out the [PostsView](https://github.com/steamclock/NiceArchitecture/blob/main/NiceArchitectureExample/NiceArchitectureExample/UI/Posts/PostsView.swift).
 
 ## ObservableVM
 
 A lot of our ViewModels end up needing to share a lot of the same behaviour, like keeping track of their View's ContentLoadState, binding to Views, handling errors, managing Cancellables, etc. By extending ObservableVM, our ViewModels get a lot of that behaviour automatically, which also helps us make sure we don't forget any of the pieces when adding new ViewModels.
 
-To see a detailed example, check out the [PostsViewModel](TODO).
+To see a detailed example, check out the [PostsViewModel](https://github.com/steamclock/NiceArchitecture/blob/main/NiceArchitectureExample/NiceArchitectureExample/UI/Posts/PostsViewModel.swift).
 
 ## StatefulView
 
 Much like ObservableVM provides a starting point for writing new ViewModels, StatefulView provides a starting point for new Views that are bound to ObservableVMs. StatefulView allows a View to dynamically track its ContentLoadState and update appropriately. It also includes default states for the loading, error and noData states.
 
-[PostsView](TODO) contains a more detailed example of how to use this.
+[PostsView](https://github.com/steamclock/NiceArchitecture/blob/main/NiceArchitectureExample/NiceArchitectureExample/UI/Posts/PostsView.swift) contains a more detailed example of how to use this.
 
 ## Dependency Injection
 
