@@ -1,9 +1,10 @@
 //
 //  CacheService.swift
-//  NiceArchitecture
+//  NiceArchitecture: <https://github.com/steamclock/NiceArchitecture>](https://github.com/steamclock/NiceArchitecture)
 //
-//  Created by Jake Miner on 2021-05-25.
-//  Copyright © 2023 Steamclock Software. All rights reserved.
+//  Copyright © 2024, Steamclock Software.
+//  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
+//
 
 import Foundation
 

@@ -1,9 +1,9 @@
 //
 //  EmptyPostCell.swift
-//  NiceArchitectureExample
+//  NiceArchitecture: <https://github.com/steamclock/NiceArchitecture>](https://github.com/steamclock/NiceArchitecture)
 //
-//  Created by Brendan Lensink on 2023-08-14.
-//  Copyright © 2023 Steamclock Software. All rights reserved.
+//  Copyright © 2024, Steamclock Software.
+//  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
 //
 
 import SwiftUI

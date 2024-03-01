@@ -1,9 +1,9 @@
 //
 //  PostService.swift
-//  NiceArchitectureExample
+//  NiceArchitecture: <https://github.com/steamclock/NiceArchitecture>](https://github.com/steamclock/NiceArchitecture)
 //
-//  Created by Brendan on 2022-08-23.
-//  Copyright © 2023 Steamclock Software. All rights reserved.
+//  Copyright © 2024, Steamclock Software.
+//  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
 //
 
 import Foundation
