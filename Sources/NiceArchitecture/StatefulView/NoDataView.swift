@@ -19,7 +19,7 @@ public struct NoDataView: View {
 
     public var body: some View {
         VStack(alignment: .center) {
-            BodyText(message)
+            NiceText(message, style: .body)
         }
     }
 }
