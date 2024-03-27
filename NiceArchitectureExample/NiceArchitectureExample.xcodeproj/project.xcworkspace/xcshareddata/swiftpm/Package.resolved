@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "netable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steamclock/netable.git",
+      "state" : {
+        "revision" : "d1dc982cd6a0ec0db37e6d3873069f929422c074",
+        "version" : "2.3.0"
+      }
+    },
+    {
       "identity" : "nicecomponents",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/steamclock/niceComponents.git",

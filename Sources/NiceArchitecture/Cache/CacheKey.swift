@@ -11,7 +11,7 @@ import Foundation
 public struct CacheKey<T: Codable> {
     let key: Int
 
-    public init<T: Hashable>(key: T) {
+    public init<U: Hashable>(key: U) {
         self.key = key.hashValue
     }
 }
