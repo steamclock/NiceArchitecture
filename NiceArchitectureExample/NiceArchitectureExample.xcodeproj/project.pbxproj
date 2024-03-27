@@ -18,6 +18,7 @@
 		B38822452AB4CC5100AFFA28 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223C2AB4CC5100AFFA28 /* Users.json */; };
 		B38822462AB4CC5100AFFA28 /* Posts.json in Resources */ = {isa = PBXBuildFile; fileRef = B388223D2AB4CC5100AFFA28 /* Posts.json */; };
 		B38822492AB4F04000AFFA28 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B38822482AB4F04000AFFA28 /* README.md */; };
+		B38AB4702BB476CA0021DEE5 /* Netable in Frameworks */ = {isa = PBXBuildFile; productRef = B38AB46F2BB476CA0021DEE5 /* Netable */; };
 		B3DC7BB82A8AE55000601348 /* EmptyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC7BB72A8AE55000601348 /* EmptyPostCell.swift */; };
 		B3F746E42A8568B90036E7B2 /* NiceArchitectureExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F746DC2A8568B90036E7B2 /* NiceArchitectureExampleApp.swift */; };
 		B3F747272A8583E40036E7B2 /* PostsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F747042A8583E40036E7B2 /* PostsCoordinatorView.swift */; };
@@ -107,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38AB4702BB476CA0021DEE5 /* Netable in Frameworks */,
 				B3F747632A8589300036E7B2 /* NiceArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +399,7 @@
 			name = NiceArchitectureExample;
 			packageProductDependencies = (
 				B3F747622A8589300036E7B2 /* NiceArchitecture */,
+				B38AB46F2BB476CA0021DEE5 /* Netable */,
 			);
 			productName = MVVMSample;
 			productReference = A62B224D263BABA400A0136E /* NiceArchitectureExample.app */;
@@ -429,8 +432,9 @@
 		A62B2245263BABA400A0136E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					A62B224C263BABA400A0136E = {
 						CreatedOnToolsVersion = 12.5;
@@ -452,6 +456,7 @@
 			);
 			mainGroup = A62B2244263BABA400A0136E;
 			packageReferences = (
+				B38AB46E2BB476CA0021DEE5 /* XCRemoteSwiftPackageReference "netable" */,
 			);
 			productRefGroup = A62B224E263BABA400A0136E /* Products */;
 			projectDirPath = "";
@@ -578,6 +583,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -639,6 +645,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -778,10 +785,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		B38AB46E2BB476CA0021DEE5 /* XCRemoteSwiftPackageReference "netable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steamclock/netable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		B388222B2AB4CB4300AFFA28 /* NiceArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NiceArchitecture;
+		};
+		B38AB46F2BB476CA0021DEE5 /* Netable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38AB46E2BB476CA0021DEE5 /* XCRemoteSwiftPackageReference "netable" */;
+			productName = Netable;
 		};
 		B3F747622A8589300036E7B2 /* NiceArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -22,8 +22,8 @@ public struct ErrorView: View {
                 Text(error.title)
                 Text(error.message)
             } else {
-                BodyText("Error:")
-                BodyText(error.localizedDescription)
+                NiceText("Error:", style: .body)
+                NiceText(error.localizedDescription, style: .body)
             }
         }
     }

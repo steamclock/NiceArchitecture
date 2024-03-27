@@ -10,12 +10,21 @@
       }
     },
     {
+      "identity" : "netable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steamclock/netable.git",
+      "state" : {
+        "revision" : "d1dc982cd6a0ec0db37e6d3873069f929422c074",
+        "version" : "2.3.0"
+      }
+    },
+    {
       "identity" : "nicecomponents",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/steamclock/niceComponents.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "254031ddbebf5d82452693071b35535a6e12514e"
+        "revision" : "b4cc7e252eb697f5673a73c720776912157eea34",
+        "version" : "2.0.0"
       }
     },
     {
@@ -32,8 +41,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/steamclock/steamclog-swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "fb60ecce1543c8ed971b91eda25b7c5a1b1908aa"
+        "revision" : "813d0b41e56d978590129c254cc41d68a5030071",
+        "version" : "2.3.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
       }
     },
     {
