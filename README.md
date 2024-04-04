@@ -1,4 +1,4 @@
-![](utilitybelt.png)
+![](nice-header.png)
 
 # NiceArchitecture
 
