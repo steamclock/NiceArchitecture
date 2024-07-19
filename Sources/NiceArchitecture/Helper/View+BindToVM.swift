@@ -26,7 +26,6 @@ public struct BindToVM: ViewModifier {
                 }
             }
             .onDisappear {
-                print("on disappear")
                 viewModel.unbindViewModel()
 
                 if !viewModel.baseUnbindCalled {
