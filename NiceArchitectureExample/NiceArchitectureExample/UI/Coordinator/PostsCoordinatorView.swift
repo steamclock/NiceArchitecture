@@ -14,10 +14,10 @@ import SwiftUI
 /// managing transitioning between Views.
 /// Doing so reduces the complexity of individual Views, and helps with things like navigation.
 struct PostsCoordinatorView: View {
-    @ObservedObject var coordinator: PostsCoordinator
+    @Bindable var coordinator: PostsCoordinator
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             PostsView(viewModel: coordinator.viewModel)
                 .navigation(item: $coordinator.postDetailViewModel) { viewModel in
                     PostDetailView(viewModel: viewModel)
