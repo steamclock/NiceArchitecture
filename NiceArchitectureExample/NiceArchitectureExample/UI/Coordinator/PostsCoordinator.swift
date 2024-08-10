@@ -18,9 +18,9 @@ enum PostsRoute {
 /// it should be responsible for holding references to each of the viewModels it manages
 /// and use that information, plus any changes in state, to decide which View to present.
 /// ViewModels can interact with their coordinator to update the state or navigate to other pages.
-class PostsCoordinator: ObservableObject, Coordinator {
-    @Published var viewModel: PostsViewModel!
-    @Published var postDetailViewModel: PostDetailViewModel?
+@Observable class PostsCoordinator: Coordinator {
+    var viewModel: PostsViewModel!
+    var postDetailViewModel: PostDetailViewModel?
 
     init() {
         viewModel = PostsViewModel(coordinator: self)
