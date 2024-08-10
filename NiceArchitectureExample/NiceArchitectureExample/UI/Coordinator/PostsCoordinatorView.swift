@@ -17,7 +17,7 @@ struct PostsCoordinatorView: View {
     @ObservedObject var coordinator: PostsCoordinator
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             PostsView(viewModel: coordinator.viewModel)
                 .navigation(item: $coordinator.postDetailViewModel) { viewModel in
                     PostDetailView(viewModel: viewModel)
