@@ -2,7 +2,7 @@
 
 # NiceArchitecture
 
-This repository is intended to be used as a more detailed reference for how we like to architect SwiftUI apps at Steamclock. [This blog post]()(coming soon™) goes over the architecture at a higher level - including goals, motivations, et cetera, while this repo digs into the specifics of how you might implement NiceArchitecture in the wild.
+This repository is intended to be used as a more detailed reference for how we like to architect SwiftUI apps at Steamclock. [This blog post](https://steamclock.com/blog/2024/04/nice-architecture) goes over the architecture at a higher level - including goals, motivations, et cetera, while this repo digs into the specifics of how you might implement NiceArchitecture in the wild.
 
 For the most part, NiceArchitecture sticks with the standard MVVM concepts most mobile developers are familiar with like ViewModels, Repositories, and Services, but adds in a little spice with the concept of ViewCoordinators to handle navigation, and opinions on things like Dependency Injection and how to manage a screen’s load state.
 
@@ -20,9 +20,9 @@ Additionally, we've included a package (also called NiceArchitecture) that provi
 
 ## The Example Project
 
-The example project contained in this repository outlines how we like to architect SwiftUI apps as of December 2023. For more context, you should probably read the accompanying blog post (coming soon™) before digging in here.
+The example project contained in this repository outlines how we like to architect SwiftUI apps as of December 2023. For more context, you should probably read the accompanying [blog post](https://steamclock.com/blog/2024/04/nice-architecture) before digging in here.
 
-Once you're up to speed, it's probably best to get started in the PostsCoordinatorView (TODO: Link), then dive into the individual Views and their ViewModels from there. Rather than including more documentation for individual classes here, we've opted to include that information in-line in the example project, to give you a better idea of how things fit together in context. 
+Once you're up to speed, it's probably best to get started in the [PostsCoordinatorView](https://github.com/steamclock/NiceArchitecture/blob/main/NiceArchitectureExample/NiceArchitectureExample/UI/Coordinator/PostsCoordinatorView.swift), then dive into the individual Views and their ViewModels from there. Rather than including more documentation for individual classes here, we've opted to include that information in-line in the example project, to give you a better idea of how things fit together in context. 
 
 ## ContentLoadState
 
@@ -176,5 +176,5 @@ Alternatively, you can use CurrentValueSubjects in your Repositories to handle c
 
 ## Array+Cancellable
 
-Our view models tend to whole a bunch of bindings in an array that we want to clear efficiently when we unbind the view model, this makes that quick and easy.
+Our view models tend to have whole a bunch of bindings in an array that we want to clear efficiently when we unbind the view model, this makes that quick and easy.
 
