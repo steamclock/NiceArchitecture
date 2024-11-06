@@ -1,24 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "kingfisher",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/onevcat/Kingfisher.git",
-      "state" : {
-        "revision" : "b6f62758f21a8c03cd64f4009c037cfa580a256e",
-        "version" : "7.9.1"
-      }
-    },
-    {
-      "identity" : "nicecomponents",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/steamclock/niceComponents.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "254031ddbebf5d82452693071b35535a6e12514e"
-      }
-    },
-    {
       "identity" : "sentry-cocoa",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getsentry/sentry-cocoa",

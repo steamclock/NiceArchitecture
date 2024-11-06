@@ -6,7 +6,6 @@
 //  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
 //
 
-import NiceComponents
 import SwiftUI
 
 public struct ErrorView: View {
@@ -22,8 +21,8 @@ public struct ErrorView: View {
                 Text(error.title)
                 Text(error.message)
             } else {
-                NiceText("Error:", style: .body)
-                NiceText(error.localizedDescription, style: .body)
+                Text("Error:")
+                Text(error.localizedDescription)
             }
         }
     }
