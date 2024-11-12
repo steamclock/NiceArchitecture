@@ -8,7 +8,6 @@
 
 import Combine
 import Foundation
-import NiceComponents
 import SwiftUI
 
 open class ObservableVM: ObservableObject {

@@ -6,7 +6,6 @@
 //  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
 //
 
-import NiceComponents
 import SwiftUI
 
 public struct NoDataView: View {
@@ -19,7 +18,7 @@ public struct NoDataView: View {
 
     public var body: some View {
         VStack(alignment: .center) {
-            NiceText(message, style: .body)
+            Text(message)
         }
     }
 }

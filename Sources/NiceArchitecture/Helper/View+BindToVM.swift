@@ -6,7 +6,6 @@
 //  Some rights reserved: <https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE>](https://github.com/steamclock/NiceArchitecture/blob/main/LICENSE)
 //
 
-import NiceComponents
 import SwiftUI
 
 public struct BindToVM: ViewModifier {
