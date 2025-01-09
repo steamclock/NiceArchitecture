@@ -13,7 +13,7 @@ let package = Package(
         .library(name: "NiceArchitecture", targets: ["NiceArchitecture"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/steamclock/steamclog-swift.git", from: "2.0.1")
+        .package(url: "https://github.com/steamclock/steamclog-swift.git", branch: "master")
     ],
     targets: [
         .target(
