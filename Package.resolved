@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/getsentry/sentry-cocoa",
       "state" : {
-        "revision" : "c3c19e29f775ee95b77aa3168f3e2fd6c20deba6",
-        "version" : "7.31.3"
+        "revision" : "f45e9c62d7a4d9258ac3cf35a3acf9dbab4481d1",
+        "version" : "8.43.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/steamclock/steamclog-swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "a441cd43d3e85d78783f1c760d2ea68854872668"
+        "revision" : "a441cd43d3e85d78783f1c760d2ea68854872668",
+        "version" : "2.3.1"
       }
     },
     {
