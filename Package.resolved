@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/steamclock/steamclog-swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "a441cd43d3e85d78783f1c760d2ea68854872668"
+        "revision" : "a441cd43d3e85d78783f1c760d2ea68854872668",
+        "version" : "2.3.1"
       }
     },
     {
